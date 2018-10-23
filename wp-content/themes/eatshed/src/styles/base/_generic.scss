@@ -1,0 +1,25 @@
+// =============================================================================
+// Generic
+// =============================================================================
+
+body {
+	background-color: $body-background-color;
+	color: $color-text-base;
+	font-family: $font-family-body;
+	font-size: fluid-type($body-size);
+	line-height: $body-line-height;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.gm-style img,
+img[width],
+img[height] {
+	max-width: none;
+}
+
