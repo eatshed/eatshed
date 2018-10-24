@@ -276,11 +276,11 @@ dd {
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .btn--primary {
-  background-color: #4FADF4;
-  border: 1px solid #4FADF4;
+  background-color: #00A886;
+  border: 1px solid #00A886;
   color: #fff; }
   .btn--primary:hover, .btn--primary:focus {
-    border-color: #4FADF4;
+    border-color: #00A886;
     color: #fff; }
 
 figure {
@@ -354,7 +354,7 @@ input[type="button"] {
   display: block;
   padding: 1em;
   margin: .5em 0;
-  background: #4FADF4;
+  background: #00A886;
   color: #fff;
   border-radius: 4px;
   -webkit-transition: all 0.2s linear;
@@ -518,16 +518,16 @@ section {
       width: 22%; } }
 
 .swatch--primary {
-  background: #4FADF4; }
+  background: #00A886; }
 
 .swatch--secondary {
-  background: #D7D1C7; }
+  background: #144733; }
 
 .swatch--tertiary {
-  background: #036F73; }
+  background: #E9E084; }
 
 .swatch--quaternary {
-  background: #F49F11; }
+  background: #FAB500; }
 
 .swatch__meta {
   font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
