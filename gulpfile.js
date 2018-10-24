@@ -10,8 +10,8 @@ var gulp = require('gulp'),
 	cheerio = require('gulp-cheerio');
 
 var paths = {
-	devUrl: 'http://origin-wordpress.test',
-	theme: './wp-content/themes/origin',
+	devUrl: 'http://eatshed.local',
+	theme: './wp-content/themes/eatshed',
 	stylesSrc: './src/styles',
 	stylesDest: './css',
 	iconsSrc: './src/icons/*',
