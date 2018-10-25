@@ -26,9 +26,16 @@ $color-instagram: #262626;
 $color-youtube: #cc181e;
 $color-linkedin: #0077B5;
 
-$font-family-body: Georgia, Times, "Times New Roman", serif;
+@font-face {
+	font-family: 'SHEDDisplay';
+	font-weight: 400;
+	src: url('../fonts/SHEDDisplay.otf');
+}
+
+$font-family-body: "nunito", Times, "Times New Roman", serif;
 $font-family-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-monospace: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+$font-family-headings: "SHEDDisplay", Times, "Times New Roman", serif;
 
 $body-background-color: $color-white;
 $body-size: 16px;
