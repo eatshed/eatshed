@@ -7,7 +7,13 @@ $args = array (
 query_posts( $args );
 ?>
 
-    <?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
+<?php
+    foreach((get_the_category()) as $category) { 
+    echo $category->cat_name . ' '; 
+} 
+?>
+
         <a class="blog-list--item" href="<?php the_permalink(); ?>" rel="bookmark">
         <div class="row">
             <div class="col-8 col-md-4 col-lg-3">

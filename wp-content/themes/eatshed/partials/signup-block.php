@@ -1,3 +1,3 @@
 <div class="signup-block">
-    signup link to page or modal with mailchimp form? awaiting design - still style this box.
+    <h3>Sign-up for our Forthnightly newsletter! </h3> <a class="btn btn--primary" href="">Signup</a> <-- Link to modal
 </div>

@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+	// Doctype and <head>
+	get_template_part( 'partials/header-blog' );
+?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
