@@ -1,11 +1,13 @@
-<div class="content-block">
-    <div>
-        <img src="<?php the_field('content_image') ?>" alt="" />
-    </div>
-    <div>
-        <h2><?php the_field('content_title');?>
-        <span><?php the_field('content_subtitle');?></span></h2>
-        <?php the_field('content_para');?>
-        <a href="<?php the_field('content_link_url');?>"><?php the_field('content_link_title');?></a>
+<div class="content-block container">
+    <div class="columns">
+        <div class="column is-half">
+            <img class="content-block__image" src="<?php the_field('content_image') ?>" alt="" />
+        </div>
+        <div class="column is-half">
+            <h2><?php the_field('content_title');?>
+            <span><?php the_field('content_subtitle');?></span></h2>
+            <?php the_field('content_para');?>
+            <a class="btn btn--primary" href="<?php the_field('content_link_url');?>"><?php the_field('content_link_title');?></a>
+        </div>
     </div>
 </div>

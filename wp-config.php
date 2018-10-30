@@ -23,10 +23,10 @@
 define('DB_NAME', 'eatshed');
 
 /** MySQL database username */
-define('DB_USER', 'eatshed');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'eatshed123');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

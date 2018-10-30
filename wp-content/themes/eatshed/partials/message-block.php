@@ -1,3 +1,3 @@
 <div class="message-block">
-    <?php the_field('message');?> <img src="<?php echo get_template_directory_uri() ?>/images/btn-next.svg" alt="Read more" />
+    <span class="message-block__text"><?php the_field('message');?> </span><img class="message-block__icon" src="<?php echo get_template_directory_uri() ?>/images/btn-next.svg" alt="Read more" />
 </div>

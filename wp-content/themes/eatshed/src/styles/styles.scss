@@ -3,6 +3,12 @@
 @import "utilities/_mixins";
 @import "utilities/_helpers";
 @import "../../../../../node_modules/sass-mq/mq";
+// @import "../../../../../node_modules/modern-normalize/modern-normalize.css";
+@import "../../../../../node_modules/bulma/sass/utilities/_all";
+@import "../../../../../node_modules/bulma/sass/grid/_all";
+@import "../../../../../node_modules/bulma/sass/elements/container";
+@import "../../../../../node_modules/bulma/sass/base/helpers";
+@import "../../../../../node_modules/owl.carousel/src/scss/owl.carousel";
 
 @import "base/_reset";
 @import "base/_generic";
@@ -27,5 +33,6 @@
 @import "layout/_content-block";
 @import "layout/_signup-block";
 @import "layout/_instagram-block";
+@import "layout/_carousel";
 
 @media print { @import "media/print"; }

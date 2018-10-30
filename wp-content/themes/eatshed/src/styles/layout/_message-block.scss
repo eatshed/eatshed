@@ -2,8 +2,13 @@
     background: white;
     width: 100%;
     text-align: center;
+    padding: 8px;
 
-    img {
+    &__text {
+        @extend h4;
+    }
+    &__icon {
         width: 20px;
+        margin-left: 24px;
     }
 }

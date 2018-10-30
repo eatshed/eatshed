@@ -2,7 +2,30 @@
 // Header
 // =============================================================================
 
-[role=banner] {
-	text-align: center;
+.header {
 	background: $color-primary;
+	padding: 24px;
+}
+
+.menu {
+	padding: 0;
+}
+.menu-header-container {
+	display: flex;
+}
+
+.nav {
+	align-self: flex-end;
+	margin-left: auto;
+}
+
+.menu-item {
+	display: inline-block;
+	a {
+		font-size: 20px;
+		text-transform: uppercase;
+		color: white;
+		font-weight: 400;
+		padding: 0 10px;
+	}
 }
