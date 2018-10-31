@@ -3280,7 +3280,27 @@ table tbody tr:hover {
     padding: 0; }
 
 .signup-block {
-  background: #00A886; }
+  background: #00A886;
+  padding: 3rem 0;
+  margin: 5rem 0; }
+  .signup-block__container {
+    background-image: url(/wp-content/themes/eatshed/images/background-signup.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    padding: 2rem 3rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .signup-block__title {
+    margin: 0; }
+  .signup-block .btn {
+    margin-left: auto; }
+
+.instagram-block {
+  text-align: center; }
 
 .carousel__background {
   display: -webkit-box;
