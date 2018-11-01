@@ -17,7 +17,23 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('wp_head', 'rest_output_link_wp_head', 10);
 remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 
-
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+    register_post_type( 'events',
+    array(
+      'labels' => array(
+      'name' => 'Events',
+      'add_new' => 'Add New',
+      'add_new_item' => 'Add New',
+      'singular_name' => 'Events'
+      ),
+    'public' => true,
+    'has_archive' => false,
+    'hierarchical' => true,
+    'rewrite' => array('slug' => 'events'),
+    )
+  );
+}
 
 /**
  * Add featured image support

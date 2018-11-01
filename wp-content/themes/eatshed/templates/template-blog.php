@@ -1,5 +1,4 @@
 <?php
-	// Doctype and <head>
     get_template_part( 'partials/header-blog' );
     the_post();
 ?>
