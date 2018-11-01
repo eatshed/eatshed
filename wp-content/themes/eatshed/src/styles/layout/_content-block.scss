@@ -2,4 +2,12 @@
     &__image {
         
     }
+    &__title {
+        color: $color-secondary;
+
+    }
+    &__sub {
+        display: block;
+        color: $color-quaternary;
+    }
 }

@@ -5,32 +5,72 @@
 .header {
 	background: $color-primary;
 	padding: 24px;
-}
-
-.menu {
-	padding: 0;
-}
-.menu-header-container {
-	display: flex;
-}
-
-.nav {
-	align-self: flex-end;
-	margin-left: auto;
-}
-
-.menu-item {
-	display: inline-block;
-	a {
+	&--blog {
+		background: white;
+		border-bottom: 2px solid $color-brown;
+		margin-bottom: 5rem;
+	}
+	&__social {
+		display: flex;
+		@include from($tablet) {
+			margin-left: auto;
+		  }
+	}
+	&__social-links {
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-left: .5rem;
+	}
+	&__column {
+		flex-direction: column;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+	&__back {
+		margin-left: auto;
 		font-size: 20px;
 		text-transform: uppercase;
-		color: white;
+		color: lighten($color-brown, 30%);
 		font-weight: 400;
 		padding: 0 10px;
 	}
-}
-nav.header-blog {
-	a {
-		color: black;
+
+	.menu {
+		padding: 0;
 	}
+	.menu-header-container {
+		display: flex;
+	}
+	
+	.nav {
+		@include from($tablet) {
+			align-self: flex-end;
+			margin-left: auto;
+			margin-top: auto;
+		  }
+	}
+	
+	.menu-item {
+		display: inline-block;
+		a {
+			font-size: 20px;
+			text-transform: uppercase;
+			color: white;
+			font-weight: 400;
+			padding: 0 10px;
+		}
+	}
+	&.header--blog {
+		.menu-item {
+			a {
+				color: $color-brown;
+			}
+		}
+	}
+	
+}
+
+.blog-logo {
+	margin-bottom: 5rem;
 }
