@@ -5,6 +5,23 @@
 .header {
 	background: $color-primary;
 	padding: 24px;
+	&__social {
+		display: flex;
+		@include from($tablet) {
+			margin-left: auto;
+		  }
+	}
+	&__social-links {
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-left: .5rem;
+	}
+	&__column {
+		flex-direction: column;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+	}
 }
 
 .menu {
@@ -15,8 +32,11 @@
 }
 
 .nav {
-	align-self: flex-end;
-	margin-left: auto;
+	@include from($tablet) {
+		align-self: flex-end;
+		margin-left: auto;
+		margin-top: auto;
+	  }
 }
 
 .menu-item {
