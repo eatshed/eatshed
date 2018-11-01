@@ -22,35 +22,37 @@
         justify-content: center;
         align-items: center;
 	}
-}
 
-.menu {
-	padding: 0;
-}
-.menu-header-container {
-	display: flex;
-}
-
-.nav {
-	@include from($tablet) {
-		align-self: flex-end;
-		margin-left: auto;
-		margin-top: auto;
-	  }
-}
-
-.menu-item {
-	display: inline-block;
-	a {
-		font-size: 20px;
-		text-transform: uppercase;
-		color: white;
-		font-weight: 400;
-		padding: 0 10px;
+	.menu {
+		padding: 0;
 	}
-}
-nav.header-blog {
-	a {
-		color: black;
+	.menu-header-container {
+		display: flex;
 	}
+	
+	.nav {
+		@include from($tablet) {
+			align-self: flex-end;
+			margin-left: auto;
+			margin-top: auto;
+		  }
+	}
+	
+	.menu-item {
+		display: inline-block;
+		a {
+			font-size: 20px;
+			text-transform: uppercase;
+			color: white;
+			font-weight: 400;
+			padding: 0 10px;
+		}
+	}
+	nav.header-blog {
+		a {
+			color: black;
+		}
+	}
+	
 }
+

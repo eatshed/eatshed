@@ -1,8 +1,47 @@
-// =============================================================================
-// Footer
-// =============================================================================
+.footer {
+	background-color: $color-secondary;
+	&__nav {
 
-[role=contentinfo] {
-	text-align: center;
-	background: $color-secondary;
+	}
+	&__social {
+		display: flex;
+	}
+	&__social-links {
+		width: 3rem;
+		height: 3rem;
+		margin-left: 1rem;
+	}
+	&__container {
+		align-items: center;
+		padding: 5rem 0;
+	}
+
+	.menu {
+		padding: 0;
+	}
+	.menu-header-container {
+		display: flex;
+	}
+	
+	.nav {
+		@include from($tablet) {
+			align-self: flex-end;
+			margin-left: auto;
+			margin-top: auto;
+		  }
+	}
+	
+	.menu-item {
+		display: inline-block;
+		a {
+			text-transform: uppercase;
+			color: white;
+			font-weight: 400;
+		}
+	}
+	nav.header-blog {
+		a {
+			color: black;
+		}
+	}
 }

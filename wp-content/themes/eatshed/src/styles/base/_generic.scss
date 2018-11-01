@@ -24,3 +24,8 @@ img[height] {
 	max-width: none;
 }
 
+.container {
+	@include until($tablet) {
+		padding: 0 1rem;
+	}
+}
