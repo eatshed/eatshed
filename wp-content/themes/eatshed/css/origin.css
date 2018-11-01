@@ -3261,6 +3261,9 @@ table tbody tr:hover {
     font-weight: 400;
     padding: 0 10px; }
 
+nav.header-blog a {
+  color: black; }
+
 [role=contentinfo] {
   text-align: center;
   background: #144733; }
