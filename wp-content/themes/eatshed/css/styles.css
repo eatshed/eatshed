@@ -2856,8 +2856,8 @@ h1,
 h2,
 h3,
 h4,
-.message-block__text,
 h5,
+.message-block__text,
 h6 {
   margin: 0;
   padding: 0; }
@@ -2866,8 +2866,8 @@ h1,
 h2,
 h3,
 h4,
-.message-block__text,
 h5,
+.message-block__text,
 h6 {
   font-size: 100%;
   font-weight: normal; }
@@ -2940,8 +2940,8 @@ h1,
 h2,
 h3,
 h4,
-.message-block__text,
 h5,
+.message-block__text,
 h6 {
   font-family: "SHEDDisplay", Times, "Times New Roman", serif;
   color: #333;
@@ -2952,28 +2952,28 @@ h6 {
   line-height: 1.2;
   text-transform: uppercase; }
 
-* + h1, * + h2, * + h3, * + h4, * + .message-block__text, * + h5, * + h6, * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
+* + h1, * + h2, * + h3, * + h4, * + h5, * + .message-block__text, * + h6, * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
   margin-top: 1.4em; }
 
 h1, .h1 {
-  font-size: calc(2.4rem + 0.3vw); }
+  font-size: calc(3rem + 0.3vw); }
 
 h2, .h2 {
-  font-size: calc(2rem + 0.3vw); }
+  font-size: calc(2.5rem + 0.3vw); }
 
 h3, .h3 {
-  font-size: calc(1.8rem + 0.3vw); }
+  font-size: calc(2rem + 0.3vw); }
+
+h4, .h4 {
+  font-size: calc(1.5rem + 0.3vw); }
 
 
-h4,
-.message-block__text, .h4 {
-  font-size: calc(1.6rem + 0.3vw); }
-
-h5, .h5 {
-  font-size: calc(1.4rem + 0.3vw); }
+h5,
+.message-block__text, .h5 {
+  font-size: calc(1.25rem + 0.3vw); }
 
 h6, .h6 {
-  font-size: calc(1.2rem + 0.3vw); }
+  font-size: calc(1rem + 0.3vw); }
 
 a {
   color: #0087D0;
@@ -3073,6 +3073,16 @@ dd {
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%; }
   .btn--primary:hover, .btn--primary:focus {
+    border-color: #00A886;
+    color: #fff; }
+
+.btn--secondary {
+  background-image: url(/wp-content/themes/eatshed/images/btn-green.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+  .btn--secondary:hover, .btn--secondary:focus {
     border-color: #00A886;
     color: #fff; }
 
@@ -3350,6 +3360,13 @@ nav.header-blog a {
   .link-block__icon--hover {
     display: none; }
 
+.content-block__title {
+  color: #144733; }
+
+.content-block__sub {
+  display: block;
+  color: #FAB500; }
+
 .signup-block {
   background: #00A886;
   padding: 3rem 0;
@@ -3366,7 +3383,8 @@ nav.header-blog a {
     display: -ms-flexbox;
     display: flex; }
   .signup-block__title {
-    margin: 0; }
+    margin: 0;
+    color: #FAB500; }
   .signup-block .btn {
     margin-left: auto; }
 

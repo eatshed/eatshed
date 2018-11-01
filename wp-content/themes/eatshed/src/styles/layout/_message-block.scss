@@ -13,7 +13,7 @@
         align-items: center;
     }
     &__text {
-        @extend h4;
+        @extend h5;
         line-height: 1;
         margin: 0;
         color: $color-secondary;
