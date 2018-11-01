@@ -5,6 +5,11 @@
 .header {
 	background: $color-primary;
 	padding: 24px;
+	&--blog {
+		background: white;
+		border-bottom: 2px solid $color-brown;
+		margin-bottom: 5rem;
+	}
 	&__social {
 		display: flex;
 		@include from($tablet) {
@@ -21,6 +26,14 @@
 		display: flex;
         justify-content: center;
         align-items: center;
+	}
+	&__back {
+		margin-left: auto;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: lighten($color-brown, 30%);
+		font-weight: 400;
+		padding: 0 10px;
 	}
 
 	.menu {
@@ -48,11 +61,16 @@
 			padding: 0 10px;
 		}
 	}
-	nav.header-blog {
-		a {
-			color: black;
+	&.header--blog {
+		.menu-item {
+			a {
+				color: $color-brown;
+			}
 		}
 	}
 	
 }
 
+.blog-logo {
+	margin-bottom: 5rem;
+}

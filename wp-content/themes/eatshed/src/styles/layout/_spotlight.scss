@@ -1,0 +1,33 @@
+.spotlight {
+    margin-bottom: 2rem;
+    &:hover {
+        text-decoration: none;
+    }
+    &__container {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $color-primary;
+        height: 100%;
+    }
+    &__img {
+        height: 200px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    &__category {
+        font-size: 1rem;
+        color: $color-grey-dark;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__author {
+        font-size: 1rem;
+        color: $color-grey-dark;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}

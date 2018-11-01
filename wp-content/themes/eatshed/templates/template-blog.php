@@ -5,9 +5,10 @@
 ?>
 
     <section class="blog-list">
-        <div class="angle angle-top angle-down angle-blue"></div>
-        <div class="wrapper">
+        <div class="container">
+            <div class="columns is-multiline">
                 <?php get_template_part( 'partials/loop', 'post' ); ?>
+            </div>
         </div>
     </section>
 
