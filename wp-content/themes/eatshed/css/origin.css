@@ -3343,6 +3343,12 @@ nav.header-blog a {
   margin: 2rem auto 3rem; }
   .link-block__list {
     padding: 0; }
+  .link-block__link:hover .link-block__icon:first-of-type {
+    display: none; }
+  .link-block__link:hover .link-block__icon--hover {
+    display: block; }
+  .link-block__icon--hover {
+    display: none; }
 
 .signup-block {
   background: #00A886;
