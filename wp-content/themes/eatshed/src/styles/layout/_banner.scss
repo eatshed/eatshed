@@ -1,0 +1,27 @@
+.banner {
+    background: $color-primary;
+    padding: 5rem 0;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__title {
+        font-size: 9rem;
+        text-align: center;
+        margin: 0;
+        line-height: 1;
+        color: white;
+    }
+    &__subheading {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+
+    }
+}
