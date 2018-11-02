@@ -4,8 +4,8 @@ the_post();
 get_header(); 
 ?>
 
-<?php include 'partials/message-block.php'; ?>
- <?php include 'partials/banner.php'; ?>  <!-- can I include these here? -->
+<?php get_template_part( 'partials/message-block'); ?>
+<?php get_template_part( 'partials/banner'); ?>
 <div class="container">
     <h2>Upcoming Shed events</h2>
     <div class="columns is-multiline">
