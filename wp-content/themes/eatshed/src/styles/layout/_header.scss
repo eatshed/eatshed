@@ -9,6 +9,12 @@
 		background: white;
 		border-bottom: 2px solid $color-brown;
 		margin-bottom: 5rem;
+		.logo {
+			width: 60px;
+		}
+		.header__nav {
+			margin-left: 2rem;
+		}
 	}
 	&__social {
 		display: flex;
