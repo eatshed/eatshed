@@ -22,7 +22,7 @@ query_posts( $args );
                 <div class="spotlight__text">
                     <span class="spotlight__category">
                         <?php foreach((get_the_category()) as $category)
-                            { echo $category->cat_name . ', '; }
+                            { echo $category->cat_name . '  '; }
                         ?>
                     </span>
                     <h3 class="spotlight__title"><?php the_title(); ?></h3>

@@ -1,8 +1,8 @@
-<?php get_header(); ?>
+<?php get_template_part( 'partials/header-blog' ); ?>
 
 <?php if ( have_posts() ): ?>
 
-<h2>Category Archive: <?php echo single_cat_title( '', false ); ?></h2>
+<h2><?php echo single_cat_title( '', false ); ?></h2>
 
 <ol>
 <?php while ( have_posts() ) : the_post(); ?>
