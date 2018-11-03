@@ -68,5 +68,6 @@
 		</div>
 	</section>
 <?php endwhile; ?>
+<?php include 'partials/signup-block.php'; ?>
 
 <?php get_footer(); ?>

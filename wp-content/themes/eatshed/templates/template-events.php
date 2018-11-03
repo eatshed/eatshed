@@ -14,7 +14,7 @@ get_header();
         ?>
             <a class="spotlight column is-one-third" href="<?php the_permalink(); ?>" rel="bookmark">
                 <div class="spotlight__img">
-                    <img src="<?php the_field('events_image'); ?>" alt="" />
+                    <img src="<?php the_field('event_image'); ?>" alt="" />
                 </div>
                 <div class="spotlight__text">
                     <h3 class="spotlight__title"><?php the_title(); ?></h3>
@@ -36,4 +36,5 @@ get_header();
     <div>
 </section>
 
+<?php get_template_part( 'partials/signup-block'); ?>
 <?php get_footer(); ?>

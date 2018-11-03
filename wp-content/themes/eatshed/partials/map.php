@@ -9,7 +9,7 @@
                 Map widget
             </div>
             <div class="column is-10 is-offset-1 map__map u-flex-center">
-                <a class="btn btn--primary" href="">More venues</a>
+                <a class="btn btn--primary" href="/venues">More venues</a>
             </div>
         </div>
     </div>
