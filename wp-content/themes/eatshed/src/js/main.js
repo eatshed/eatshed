@@ -9,7 +9,8 @@ jQuery(function($){
 				singleItem:true,
 				nav:true,
 				navText: [$('.carousel__arrow--next'),$('.carousel__arrow--prev')],
-				dots:false
+				dots:false,
+				loop: true
 			});
 			$('.image-carousel__container').owlCarousel({
 				stagePadding: 0,
