@@ -19,3 +19,4 @@
 		</div>
 	</div>
 </header><!-- /page-masthead -->
+<?php get_template_part( 'partials/message-block'); ?>
