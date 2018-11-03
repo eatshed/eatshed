@@ -3,13 +3,21 @@
     the_post();
 ?>
 
-    <section class="blog-list">
-        <div class="container">
-            <div class="columns is-multiline">
-                <?php get_template_part( 'partials/loop', 'post' ); ?>
-            </div>
+<div class="container blog-logo">
+	<div class="columns is-mobile">
+		<div class="column is-half is-offset-one-quarter">
+			<a class="logo" href="<?php echo home_url(); ?>/blog"><img src="<?php echo get_template_directory_uri() ?>/images/logo-blog.svg" alt="Shed Logo" /></a>
+		</div>
+	</div>
+</div>
+
+<section class="blog-list">
+    <div class="container">
+        <div class="columns is-multiline">
+            <?php get_template_part( 'partials/loop', 'post' ); ?>
         </div>
-    </section>
+    </div>
+</section>
 
    
 <?php get_footer(); ?>
