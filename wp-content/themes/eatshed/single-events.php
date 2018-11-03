@@ -1,15 +1,16 @@
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'partials/banner'); ?>
+<?php get_template_part( 'partials/banner-event'); ?>
 
 	<section class="event-intro u-spacing-bottom">
 		<div class="container">
 			<div class="columns is-multiline">
 				<div class="column is-10 is-offset-1">
-					<p>(WILL UPDATE WHEN WE DO EVENT POSTS) Established 2018, Shed is the healthy living lifestyle brand, centered around 100% plant-based foods.
-		We create affordable, super-tasty plant-based food that goes big on nutrition and even bigger on flavour. And we’re on a mission to inspire and to nourish the growing number of people embracing a plant-based lifestyle.
-					</p>
+					<p><?php the_content(false, false); ?></p>
+					<?php if(get_field('event_booking_link')): ?>
+						<a class="btn btn--primary" href="<?php the_field('event_booking_link'); ?>">Book Now</a>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
@@ -23,31 +24,44 @@
 				</div>
 				<div class="column is-5 is-offset-1">
 					<ul class="event-info__list">
+						<?php if(get_field('event_host')): ?>
 						<li class="event-info__item">
 							<h5 class="u-text-orange">HOST:</h5>
-							<p>SHED & INDUSTRIAL DESIGN CO</p>
+							<p> <?php the_field('event_host'); ?></p>
 						</li>
+						<?php endif; ?>
+
+						<?php if(get_field('event_date')): ?>
 						<li class="event-info__item">
 							<h5 class="u-text-orange">DATE:</h5>
-							<p>01/01/18 - 02/01/18</p>
+							<p><?php the_field('event_date'); ?></p>
 						</li>
+						<?php endif; ?>
+
+						<?php if(get_field('event_time')): ?> 
 						<li class="event-info__item">
 							<h5 class="u-text-orange">Time:</h5>
-							<p>09.00 - 17.00</p>
+							<p><?php the_field('event_time'); ?></p>
 						</li>
+						<?php endif; ?>
 					</ul>
 				</div>
 				<div class="column is-5">
 					<ul class="event-info__list">
+						<?php if(get_field('event_price')): ?>
 						<li class="event-info__item">
 							<h5 class="u-text-orange">PRICE:</h5>
-							<p>FREE or £</p>
+							<p><?php the_field('event_price'); ?></p>
 						</li>
+						<?php endif; ?>
+
+						<?php if(get_field('event_location')): ?> 
 						<li class="event-info__item">
 							<h5 class="u-text-orange">LOCATION:</h5>
-							<p>CUTLREY WORKS, SHEFFIELD</p>
-							<a href="/venues">Get Directions</a>
+							<p><?php the_field('event_location'); ?></p>
+							<a href="<?php the_field('event_directions_link'); ?>">Get Directions</a>
 						</li>
+						<?php endif; ?>
 					</ul>
 				</div>
 			</div>

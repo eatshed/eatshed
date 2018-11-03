@@ -18,7 +18,7 @@ get_header();
                 </div>
                 <div class="spotlight__text">
                     <h3 class="spotlight__title"><?php the_title(); ?></h3>
-                    <?php the_field('events_description'); ?>
+                    <span class="btn btn--secondary"><?php the_field('event_date'); ?></span>
                 </div>
             </a>
         <?php
@@ -26,5 +26,14 @@ get_header();
         ?>
     </div>
 </div>
+
+<section>
+    <div class="container">
+        <h2 class="has-text-centered">Got an event idea?</h2>
+        <h3 class="has-text-centered u-text-orange">Get intouch if you have an event that needs some plant pusher love </h3>
+
+        Form
+    <div>
+</section>
 
 <?php get_footer(); ?>
