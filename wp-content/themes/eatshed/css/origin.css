@@ -36,6 +36,9 @@
 .u-text-green {
   color: #00A886 !important; }
 
+.u-spacing-bottom {
+  margin-bottom: 5rem !important; }
+
 .u-flex-center {
   display: -webkit-box !important;
   display: -webkit-flex !important;
@@ -3007,12 +3010,12 @@ h6, .h6 {
   font-size: calc(1rem + 0.3vw); }
 
 a {
-  color: #0087D0;
+  color: #00A886;
   text-decoration: none; }
 
 a:focus,
 a:hover {
-  color: #003451;
+  color: #144733;
   text-decoration: underline; }
 
 blockquote {
