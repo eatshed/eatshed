@@ -19,6 +19,9 @@
         margin: 0;
         line-height: 1;
         color: white;
+        .banner--event & {
+            font-size: 4rem;
+        }
     }
     &__subheading {
         width: 50%;
