@@ -6,6 +6,7 @@ get_header();
 
 <?php get_template_part( 'partials/message-block'); ?>
 <?php get_template_part( 'partials/banner'); ?>
+
 <div class="container">
     <h2>Upcoming Shed events</h2>
     <div class="columns is-multiline">

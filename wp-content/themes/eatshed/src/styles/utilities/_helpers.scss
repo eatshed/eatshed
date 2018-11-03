@@ -11,6 +11,12 @@
 .u-left-align { text-align: left!important; }
 .u-center { text-align: center!important; }
 .u-right-align { text-align: right!important; }
+.u-text-orange { color: $color-quaternary!important; }
+.u-text-green { color: $color-primary!important; }
+.u-flex-center { 
+    display: flex!important;
+    align-items: center;
+    justify-content: center;}
 
 // WordPress specifc
 img.alignright      { float: right; margin: 0 0 1em 1em; }

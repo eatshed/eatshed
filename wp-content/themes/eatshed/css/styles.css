@@ -30,6 +30,26 @@
 .u-right-align {
   text-align: right !important; }
 
+.u-text-orange {
+  color: #FAB500 !important; }
+
+.u-text-green {
+  color: #00A886 !important; }
+
+.u-flex-center {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 img.alignright {
   float: right;
   margin: 0 0 1em 1em; }
@@ -2853,6 +2873,7 @@ pre,
 iframe,
 hr,
 h1,
+.opening-times__servingTime,
 h2,
 h3,
 h4,
@@ -2862,7 +2883,9 @@ h6 {
   margin: 0;
   padding: 0; }
 
+
 h1,
+.opening-times__servingTime,
 h2,
 h3,
 h4,
@@ -2940,7 +2963,9 @@ p {
 p.lead {
   font-size: calc(1.3rem + 0.3vw); }
 
+
 h1,
+.opening-times__servingTime,
 h2,
 h3,
 h4,
@@ -2950,16 +2975,18 @@ h6 {
   font-family: "SHEDDisplay", Times, "Times New Roman", serif;
   color: #333;
   text-rendering: optimizelegibility;
-  margin-bottom: .7em;
+  margin-bottom: .4em;
   margin-top: 0;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase; }
 
-* + h1, * + h2, * + h3, * + h4, * + h5, * + .message-block__text, * + h6, * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
+* + h1, * + .opening-times__servingTime, * + h2, * + h3, * + h4, * + h5, * + .message-block__text, * + h6, * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
   margin-top: 1.4em; }
 
-h1, .h1 {
+
+h1,
+.opening-times__servingTime, .h1 {
   font-size: calc(3rem + 0.3vw); }
 
 h2, .h2 {
@@ -3537,7 +3564,8 @@ table tbody tr:hover {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 5rem; }
   .banner__container {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -3547,7 +3575,16 @@ table tbody tr:hover {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%; }
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .banner__title {
     font-size: 9rem;
     text-align: center;
@@ -3559,6 +3596,22 @@ table tbody tr:hover {
     margin: 0 auto;
     text-align: center;
     color: white; }
+  .banner .btn {
+    margin-top: 2rem; }
+
+.opening-times {
+  margin-bottom: 5rem; }
+  .opening-times__title {
+    margin-bottom: 0; }
+  .opening-times__list {
+    padding: 0; }
+  .opening-times__servingTime {
+    font-size: 12rem;
+    margin: 0;
+    line-height: 1; }
+
+.map {
+  margin-bottom: 5rem; }
 
 @media print {
   * {
