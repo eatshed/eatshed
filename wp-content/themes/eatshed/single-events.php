@@ -8,9 +8,6 @@
 			<div class="columns is-multiline">
 				<div class="column is-10 is-offset-1">
 					<p><?php the_content(false, false); ?></p>
-					<?php if(get_field('event_booking_link')): ?>
-						<a class="btn btn--primary" href="<?php the_field('event_booking_link'); ?>">Book Now</a>
-					<?php endif; ?>
 				</div>
 			</div>
 		</div>
@@ -65,8 +62,33 @@
 					</ul>
 				</div>
 			</div>
+			<?php if(get_field('event_booking_link')): ?>
+				<a class="btn btn--primary" href="<?php the_field('event_booking_link'); ?>">Book Now</a>
+			<?php endif; ?>
 		</div>
 	</section>
+
+	<div class="container">
+    <h2 class="u-text-orange">Upcoming Shed events</h2>
+    <div class="columns is-multiline">
+        <?php
+            $the_query = new WP_Query(array('posts_per_page' => 3, 'order_by'=>'date', 'order'=>'desc' , 'post_type'=>'events'));
+            while ( $the_query->have_posts() ) : $the_query->the_post();
+        ?>
+            <a class="spotlight column is-one-third" href="<?php the_permalink(); ?>" rel="bookmark">
+                <div class="spotlight__img">
+                    <img src="<?php the_field('event_image'); ?>" alt="" />
+                </div>
+                <div class="spotlight__text">
+                    <h3 class="spotlight__title"><?php the_title(); ?></h3>
+                    <span class="btn btn--secondary"><?php the_field('event_date'); ?></span>
+                </div>
+            </a>
+        <?php
+            endwhile;
+        ?>
+    </div>
+</div>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
