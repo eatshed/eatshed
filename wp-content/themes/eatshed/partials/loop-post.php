@@ -20,15 +20,13 @@ query_posts( $args );
                 ?>
                 </div>
                 <div class="spotlight__text">
-                    <!-- <div class=""><?php the_time('d/m/Y') ?></div> -->
-                    <!-- <?php
-                        foreach((get_the_category()) as $category) { 
-                        echo $category->cat_name . ' '; 
-                    } 
-                    ?> -->
-                    <span class="spotlight__category">Category</span>
+                    <span class="spotlight__category">
+                        <?php foreach((get_the_category()) as $category)
+                            { echo $category->cat_name . ', '; }
+                        ?>
+                    </span>
                     <h3 class="spotlight__title"><?php the_title(); ?></h3>
-                    <span class="spotlight__author">By Joe Blogs</span>
+                    <span class="spotlight__author">By <?php the_author(); ?> </span>
 
                 </div>
             </div>
