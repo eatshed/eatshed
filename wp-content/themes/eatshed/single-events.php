@@ -8,6 +8,9 @@
 			<div class="columns is-multiline">
 				<div class="column is-10 is-offset-1">
 					<p><?php the_content(false, false); ?></p>
+					<?php if(get_field('event_booking_link')): ?>
+						<a class="btn btn--primary" href="<?php the_field('event_booking_link'); ?>">Book Now</a>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
@@ -62,9 +65,6 @@
 					</ul>
 				</div>
 			</div>
-			<?php if(get_field('event_booking_link')): ?>
-				<a class="btn btn--primary" href="<?php the_field('event_booking_link'); ?>">Book Now</a>
-			<?php endif; ?>
 		</div>
 	</section>
 
@@ -90,5 +90,6 @@
 		</div>
 	</div>
 <?php endwhile; ?>
+<?php include 'partials/signup-block.php'; ?>
 
 <?php get_footer(); ?>
