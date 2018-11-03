@@ -1,12 +1,20 @@
 
-.carousel {
-    overflow: hidden;
-    &__background {
+.image-carousel {
+    &__container {
+        overflow: hidden;
+    }
+    &__content {
+        color: white;
+        width: 60%;
+    }
+    &__item {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 70vh;
         flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     &__image {
         width: 35%;
@@ -15,6 +23,9 @@
     &__arrow {
         width: 50px;
         height: 50px;
+    }
+    &__title {
+        color: white;
     }
 }
 
