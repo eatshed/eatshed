@@ -2,10 +2,16 @@
     margin-bottom: 2rem;
     &:hover {
         text-decoration: none;
+        .spotlight__title {
+            color: $color-quaternary;
+        }
+        .spotlight__container {
+            border-bottom: 2px solid $color-quaternary;
+        }
     }
     &__container {
         padding-bottom: 1rem;
-        border-bottom: 1px solid $color-primary;
+        border-bottom: 2px solid $color-primary;
         height: 100%;
     }
     &__img {
@@ -23,6 +29,7 @@
     }
     &__title {
         margin: 1rem 0;
+        font-size: 1.8rem;
     }
     &__author {
         font-size: 1rem;

@@ -2960,10 +2960,10 @@ article .gm-style img,
 article img[width],
 article img[height] {
   border: 10px solid #E9E084;
-  width: 120%;
-  max-width: 120%;
+  width: 110%;
+  max-width: 110%;
   position: relative;
-  left: -10%; }
+  left: -5%; }
   @media screen and (max-width: 768px) {
     article .gm-style img,
     article img[width],
@@ -3575,9 +3575,13 @@ table tbody tr:hover {
   margin-bottom: 2rem; }
   .spotlight:hover {
     text-decoration: none; }
+    .spotlight:hover .spotlight__title {
+      color: #FAB500; }
+    .spotlight:hover .spotlight__container {
+      border-bottom: 2px solid #FAB500; }
   .spotlight__container {
     padding-bottom: 1rem;
-    border-bottom: 1px solid #00A886;
+    border-bottom: 2px solid #00A886;
     height: 100%; }
   .spotlight__img {
     height: 200px;
@@ -3590,7 +3594,8 @@ table tbody tr:hover {
     margin: 0;
     text-transform: uppercase; }
   .spotlight__title {
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    font-size: 1.8rem; }
   .spotlight__author {
     font-size: 1rem;
     color: #6a6a6a;
@@ -3648,6 +3653,19 @@ table tbody tr:hover {
     color: white; }
   .banner .btn {
     margin-top: 2rem; }
+
+.category h1, .category .opening-times__servingTime {
+  font-size: 8rem;
+  text-align: center;
+  margin: 6rem 0 0 0;
+  line-height: 1;
+  color: #4D4129; }
+
+.category .category__description {
+  margin: 0 0 6rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #81BB27; }
 
 .opening-times {
   margin-bottom: 5rem; }

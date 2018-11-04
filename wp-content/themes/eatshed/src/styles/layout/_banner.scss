@@ -33,3 +33,19 @@
         margin-top: 2rem;
     }
 }
+
+.category {
+    h1 {
+        font-size: 8rem;
+        text-align: center;
+        margin: 6rem 0 0 0;
+        line-height: 1;
+        color: $color-blog-primary;
+    }
+    .category__description {
+        margin: 0 0 6rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-blog-secondary;
+    }
+}

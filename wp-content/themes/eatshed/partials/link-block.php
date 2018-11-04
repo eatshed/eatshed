@@ -7,7 +7,7 @@
             </a>
         </li>
         <li class="link-block__item column is-half-mobile">
-            <a href="<?php echo home_url(); ?>/menu" class="link-block__link">
+            <a href="<?php echo home_url(); ?>/wp-content/uploads/menu.pdf" class="link-block__link">
                 <img class="link-block__icon" src="<?php echo get_template_directory_uri() ?>/images/link-menu.svg" alt="View our menu" />        
                 <img class="link-block__icon link-block__icon--hover" src="<?php echo get_template_directory_uri() ?>/images/link-menu-hover.svg" alt="View our menu" />        
             </a>
