@@ -8,9 +8,9 @@
             </div>
             <?php endif; ?>
             <div class="column is-10 is-offset-1 map__map">
-                Map widget
+                <?php echo do_shortcode("[wpgmza id='1']"); ?>
             </div>
-            <div class="column is-10 is-offset-1 map__map u-flex-center">
+            <div class="column is-10 is-offset-1 u-flex-center">
                 <a class="btn btn--primary" href="/venues">More venues</a>
             </div>
         </div>
