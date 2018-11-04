@@ -3393,7 +3393,7 @@ table tbody tr:hover {
       margin-left: auto;
       margin-top: auto; } }
   .footer .menu-item {
-    display: inline-block; }
+    display: block; }
     .footer .menu-item a {
       text-transform: uppercase;
       color: white;
