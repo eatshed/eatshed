@@ -56,6 +56,9 @@
       -ms-flex-pack: center;
           justify-content: center; }
 
+.u-align-center {
+  margin: 0 auto; }
+
 img.alignright {
   float: right;
   margin: 0 0 1em 1em; }
@@ -3587,7 +3590,7 @@ table tbody tr:hover {
     margin: 0;
     text-transform: uppercase; }
   .spotlight__title {
-    margin: 0; }
+    margin: 1rem 0; }
   .spotlight__author {
     font-size: 1rem;
     color: #6a6a6a;

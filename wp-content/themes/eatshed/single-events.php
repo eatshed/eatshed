@@ -1,4 +1,4 @@
-<?php get_template_part( 'partials/header-blog' ); ?>
+<?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'partials/banner-event'); ?>
@@ -8,9 +8,6 @@
 			<div class="columns is-multiline">
 				<div class="column is-10 is-offset-1">
 					<p><?php the_content(false, false); ?></p>
-					<?php if(get_field('event_booking_link')): ?>
-						<a class="btn btn--primary" href="<?php the_field('event_booking_link'); ?>">Book Now</a>
-					<?php endif; ?>
 				</div>
 			</div>
 		</div>
@@ -64,6 +61,11 @@
 						<?php endif; ?>
 					</ul>
 				</div>
+				<?php if(get_field('event_booking_link')): ?>
+				<div class="u-align-center">
+					<a class="btn btn--primary" href="<?php the_field('event_booking_link'); ?>">Book Now</a>
+				</div>
+				<?php endif; ?>
 			</div>
 		</div>
 	</section>
@@ -90,6 +92,14 @@
 		</div>
 	</div>
 <?php endwhile; ?>
+<section>
+    <div class="container">
+        <h2 class="has-text-centered">Got an event idea?</h2>
+        <h3 class="has-text-centered u-text-orange">Get intouch if you have an event that needs some plant pusher love </h3>
+
+        <?php echo do_shortcode("[contact-form-7 id='174' title='Contact']"); ?>
+    <div>
+</section>
 <?php include 'partials/signup-block.php'; ?>
 
 <?php get_footer(); ?>
