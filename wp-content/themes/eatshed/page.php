@@ -18,4 +18,5 @@
 
 <?php endwhile; ?>
 
+<?php get_template_part( 'partials/signup-block'); ?>
 <?php get_footer(); ?>

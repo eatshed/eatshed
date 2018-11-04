@@ -15,15 +15,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-headings;
     color: $color-text-base;
     text-rendering: optimizelegibility;
-	margin-bottom: .4em;
+	// margin-bottom: .4em;
 	margin-top: 0;
 	font-weight: $font-weight-headings;
 	line-height: $heading-line-height;
 	text-transform: uppercase;
 }
+h2 + h2 {
+	color: $color-quaternary;
+	margin-top: 0;
+}
+
 
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6, * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
 	margin-top: 1.4em;
+	margin-bottom: .4em;
 }
 
 h1, .h1 { font-size: fluid-type($font-size-h1); }

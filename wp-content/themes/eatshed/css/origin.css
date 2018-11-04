@@ -2941,7 +2941,7 @@ th {
 
 body {
   background-color: #fff;
-  color: #333;
+  color: #144733;
   font-family: "nunito", Times, "Times New Roman", serif;
   font-size: calc(16px + 0.3vw);
   font-weight: 700;
@@ -2952,11 +2952,6 @@ body {
 img {
   max-width: 100%;
   vertical-align: middle; }
-
-.gm-style img,
-img[width],
-img[height] {
-  max-width: none; }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -2979,16 +2974,20 @@ h5,
 .message-block__text,
 h6 {
   font-family: "SHEDDisplay", Times, "Times New Roman", serif;
-  color: #333;
+  color: #144733;
   text-rendering: optimizelegibility;
-  margin-bottom: .4em;
   margin-top: 0;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase; }
 
+h2 + h2 {
+  color: #FAB500;
+  margin-top: 0; }
+
 * + h1, * + .opening-times__servingTime, * + h2, * + h3, * + h4, * + h5, * + .message-block__text, * + h6, * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
-  margin-top: 1.4em; }
+  margin-top: 1.4em;
+  margin-bottom: .4em; }
 
 
 h1,
@@ -3567,7 +3566,7 @@ table tbody tr:hover {
     text-transform: uppercase; }
 
 .banner {
-  background-color: #00A886;
+  background-color: #00FF00;
   padding: 5rem 0;
   min-height: 50vh;
   display: -webkit-box;
