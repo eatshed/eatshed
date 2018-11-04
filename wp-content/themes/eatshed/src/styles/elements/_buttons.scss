@@ -31,6 +31,7 @@
 	&:hover, &:focus {
 		border-color: $color-primary;
 		color: $color-text-reversed;
+		background-image: url(/wp-content/themes/eatshed/images/btn-green.svg);
 	}
 }
 
@@ -43,5 +44,6 @@
 	&:hover, &:focus {
 		border-color: $color-primary;
 		color: $color-text-reversed;
+		background-image: url(/wp-content/themes/eatshed/images/btn-orange.svg);
 	}
 }

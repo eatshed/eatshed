@@ -45,3 +45,9 @@
 		}
 	}
 }
+
+.page-template-template-blog, .category, .single-post {
+    .footer {
+        background: $color-blog-primary;
+    }
+}

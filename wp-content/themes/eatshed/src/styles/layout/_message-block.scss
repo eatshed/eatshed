@@ -26,9 +26,10 @@
     }
 
     &:hover {
-        background: $color-secondary;
-        .message-block__text {
-            color: white;
-        }
+        background: $color-tertiary;
+        text-decoration: none;
+        // .message-block__text {
+        //     color: white;
+        // }
     }
 }

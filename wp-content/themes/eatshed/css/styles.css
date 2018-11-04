@@ -3133,7 +3133,8 @@ dd {
           background-size: 100% 100%; }
   .btn--primary:hover, .btn--primary:focus {
     border-color: #00A886;
-    color: #fff; }
+    color: #fff;
+    background-image: url(/wp-content/themes/eatshed/images/btn-green.svg); }
 
 .btn--secondary {
   background-image: url(/wp-content/themes/eatshed/images/btn-green.svg);
@@ -3143,7 +3144,8 @@ dd {
           background-size: 100% 100%; }
   .btn--secondary:hover, .btn--secondary:focus {
     border-color: #00A886;
-    color: #fff; }
+    color: #fff;
+    background-image: url(/wp-content/themes/eatshed/images/btn-orange.svg); }
 
 figure {
   margin: 0; }
@@ -3424,6 +3426,9 @@ table tbody tr:hover {
   .footer nav.header-blog a {
     color: black; }
 
+.page-template-template-blog .footer, .category .footer, .single-post .footer {
+  background: #4D4129; }
+
 .message-block {
   background: white;
   width: 100%;
@@ -3464,9 +3469,8 @@ table tbody tr:hover {
     margin-left: 1rem;
     margin-top: -4px; }
   .message-block:hover {
-    background: #144733; }
-    .message-block:hover .message-block__text {
-      color: white; }
+    background: #E9E084;
+    text-decoration: none; }
 
 .link-block {
   margin: 2rem auto 3rem; }
@@ -3544,7 +3548,8 @@ table tbody tr:hover {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    padding: 50px 0; }
   .carousel__image {
     width: 35%;
     padding-bottom: 3rem; }
@@ -3556,6 +3561,10 @@ table tbody tr:hover {
   display: inline-block;
   border: 10px solid #E9E084; }
 
+.home .owl-item {
+  display: inline-block;
+  border: none; }
+
 .owl-nav {
   position: absolute;
   top: 50%;
@@ -3565,7 +3574,9 @@ table tbody tr:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: transparent;
-    position: absolute; }
+    position: absolute;
+    cursor: pointer;
+    outline: none; }
   .owl-nav .owl-next {
     right: 5%; }
   .owl-nav .owl-prev {
