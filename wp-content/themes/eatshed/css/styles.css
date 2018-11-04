@@ -3425,7 +3425,7 @@ table tbody tr:hover {
   background: white;
   width: 100%;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.6rem 0.5rem 0.4rem 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3458,7 +3458,12 @@ table tbody tr:hover {
   .message-block__icon {
     width: 20px;
     height: 20px;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    margin-top: -4px; }
+  .message-block:hover {
+    background: #144733; }
+    .message-block:hover .message-block__text {
+      color: white; }
 
 .link-block {
   margin: 2rem auto 3rem; }
