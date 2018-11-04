@@ -21,9 +21,13 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: $heading-line-height;
 	text-transform: uppercase;
 }
-h2 + h2 {
+h2 + h2, h2 + h3 {
 	color: $color-quaternary;
 	margin-top: 0;
+}
+p + h2 {
+	color: $color-quaternary;
+	margin-top: 1.4em;
 }
 
 

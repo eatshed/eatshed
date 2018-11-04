@@ -8,9 +8,9 @@
                 <img src="<?php echo get_template_directory_uri() ?>/images/logo-large.svg" alt="Shed Logo" />
             </div>
             <div class="footer__social column is-2 is-offset-2">
-                <a href="#na" class="footer__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-youtube.svg" alt="Youtube" /></a>
-                <a href="#na" class="footer__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-insta.svg" alt="Instagram" /></a>
-                <a href="#na" class="footer__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.svg" alt="Facebook" /></a>
+                <a href="<?php the_field('youtube', 'option'); ?>" class="footer__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-youtube.svg" alt="Youtube" /></a>
+                <a href="<?php the_field('instagram', 'option'); ?>" class="footer__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-insta.svg" alt="Instagram" /></a>
+                <a href="<?php the_field('facebook', 'option'); ?>" class="footer__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.svg" alt="Facebook" /></a>
             </div>
         </div>
     </div>

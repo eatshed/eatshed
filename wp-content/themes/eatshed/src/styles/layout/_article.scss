@@ -2,6 +2,9 @@
     &__header {
         
     }
+    &__banner {
+        border: 10px solid $color-tertiary;
+    }
     &__title {
         margin-top: 0;
     }

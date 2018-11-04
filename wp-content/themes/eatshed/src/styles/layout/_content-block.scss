@@ -1,6 +1,6 @@
 .content-block {
     &__image {
-        
+        border: 10px solid $color-tertiary;
     }
     &__title {
         color: $color-secondary;

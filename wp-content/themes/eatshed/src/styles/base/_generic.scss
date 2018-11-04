@@ -23,6 +23,23 @@ img[width],
 img[height] {
 	// max-width: none;
 }
+article {
+	.gm-style img,
+	img[width],
+	img[height] {
+		// max-width: none;
+		border: 10px solid $color-tertiary;
+		width: 120%;
+		max-width: 120%;
+		position: relative;
+		left: -10%;
+		@include until($tablet) {
+			width: 100%;
+			max-width: 100%;
+			left: 0;
+		}
+	}
+} 
 
 .container {
 	@include until($tablet) {

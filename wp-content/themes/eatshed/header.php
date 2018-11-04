@@ -11,9 +11,9 @@
 				</div>
 				<div class="column is-8 is-flex header__column">
 					<div class="header__social">
-						<a href="#na" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-youtube.svg" alt="Youtube" /></a>
-						<a href="#na" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-insta.svg" alt="Instagram" /></a>
-						<a href="#na" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.svg" alt="Facebook" /></a>
+						<a href="<?php the_field('youtube', 'option'); ?>" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-youtube.svg" alt="Youtube" /></a>
+						<a href="<?php the_field('instagram', 'option'); ?>" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-insta.svg" alt="Instagram" /></a>
+						<a href="<?php the_field('facebook', 'option'); ?>" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.svg" alt="Facebook" /></a>
 					</div>
 					<nav class="nav"><?php wp_nav_menu( array('theme_location' => 'primary') ); ?></nav>
 				</div>
