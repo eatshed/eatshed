@@ -4,18 +4,17 @@ jQuery(function($){
 			$('.carousel').owlCarousel({
 				stagePadding: 0,
 				items: 1,
-				loop:false,
+				loop: true,
 				margin:0,
 				singleItem:true,
 				nav:true,
 				navText: [$('.carousel__arrow--next'),$('.carousel__arrow--prev')],
-				dots:false,
-				loop: true
+				dots:false
 			});
 			$('.image-carousel__container').owlCarousel({
 				stagePadding: 0,
 				items: 1,
-				loop:false,
+				loop: true,
 				margin:0,
 				singleItem:true,
 				nav:true,

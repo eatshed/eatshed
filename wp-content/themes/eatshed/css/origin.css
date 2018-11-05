@@ -3549,7 +3549,9 @@ table tbody tr:hover {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 50px 0; }
+    padding: 50px 0;
+    -webkit-background-size: cover;
+            background-size: cover; }
   .carousel__image {
     width: 35%;
     padding-bottom: 3rem; }
