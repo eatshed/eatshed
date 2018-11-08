@@ -3018,26 +3018,83 @@ p + h2 {
 
 h1,
 .opening-times__servingTime, .h1 {
-  font-size: calc(3rem + 0.3vw); }
+  font-size: 32px; }
+  @media screen and (min-width: 320px) {
+    
+    h1,
+    .opening-times__servingTime, .h1 {
+      font-size: calc(32px + 16 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    
+    h1,
+    .opening-times__servingTime, .h1 {
+      font-size: 48px; } }
 
 h2, .h2 {
-  font-size: calc(2.5rem + 0.3vw); }
+  font-size: 24px; }
+  @media screen and (min-width: 320px) {
+    h2, .h2 {
+      font-size: calc(24px + 16 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    h2, .h2 {
+      font-size: 40px; } }
 
 h3, .h3 {
-  font-size: calc(2rem + 0.3vw); }
+  font-size: 20px; }
+  @media screen and (min-width: 320px) {
+    h3, .h3 {
+      font-size: calc(20px + 12 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    h3, .h3 {
+      font-size: 32px; } }
 
 
 h4,
 .form__label, .h4 {
-  font-size: calc(1.5rem + 0.3vw); }
+  font-size: 16px; }
+  @media screen and (min-width: 320px) {
+    
+    h4,
+    .form__label, .h4 {
+      font-size: calc(16px + 8 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    
+    h4,
+    .form__label, .h4 {
+      font-size: 24px; } }
 
 
 h5,
 .message-block__text, .h5 {
-  font-size: calc(1.25rem + 0.3vw); }
+  font-size: 16px; }
+  @media screen and (min-width: 320px) {
+    
+    h5,
+    .message-block__text, .h5 {
+      font-size: calc(16px + 4 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    
+    h5,
+    .message-block__text, .h5 {
+      font-size: 20px; } }
 
 h6, .h6 {
-  font-size: calc(1rem + 0.3vw); }
+  font-size: 16px; }
+  @media screen and (min-width: 320px) {
+    h6, .h6 {
+      font-size: calc(16px + 0 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    h6, .h6 {
+      font-size: 16px; } }
+
+.title--banner, .banner__title {
+  font-size: 48px; }
+  @media screen and (min-width: 320px) {
+    .title--banner, .banner__title {
+      font-size: calc(48px + 96 * ((100vw - 320px) / 880)); } }
+  @media screen and (min-width: 1200px) {
+    .title--banner, .banner__title {
+      font-size: 144px; } }
 
 a {
   color: #00A886;
@@ -3647,7 +3704,11 @@ table tbody tr:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .banner__container {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -3668,7 +3729,6 @@ table tbody tr:hover {
         -ms-flex-direction: column;
             flex-direction: column; }
   .banner__title {
-    font-size: 9rem;
     text-align: center;
     margin: 0;
     line-height: 1;

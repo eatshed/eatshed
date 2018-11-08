@@ -52,12 +52,13 @@ $font-size-small: .9rem;
 $font-size-base: 1rem;
 $font-size-lead: 1.3rem;
 
-$font-size-h1: 3rem;
-$font-size-h2: 2.5rem;
-$font-size-h3: 2rem;
-$font-size-h4: 1.5rem;
-$font-size-h5: 1.25rem;
-$font-size-h6: 1rem;
+$font-size-h1: 48px;
+$font-size-h2: 40px;
+$font-size-h3: 32px;
+$font-size-h4: 24px;
+$font-size-h5: 20px;
+$font-size-h6: 16px;
+$font-size-banner: 144px;
 
 $heading-line-height: 1.2;
 
@@ -86,6 +87,9 @@ $mq-breakpoints: (
     large: 62.5em,
     xlarge: 80em
 );
+
+$min_width: 320px;
+$max_width: 1200px;
 
 $column-gap: 1rem;
 
