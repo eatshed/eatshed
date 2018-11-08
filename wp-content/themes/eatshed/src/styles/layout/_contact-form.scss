@@ -1,0 +1,59 @@
+.wpcf7 {
+    @extend .columns;
+    @extend .is-centered;
+    &-form {
+        @extend .column;
+        @extend .is-8;
+    }
+    p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    label {
+    }
+    span {
+        flex: 1;
+    }
+    input {
+        width: 100%;
+        background: $color-secondary;
+        border: none;
+    }
+    textarea {
+        width: 100%;
+        background: $color-secondary;
+        border: none;
+    }
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+        display: block;
+        border: 0;
+        @extend .btn;
+        @extend .btn--primary;
+        align-self: flex-start;
+        width: auto;
+    }
+}
+
+.form {
+    &__label {
+        @extend h4;
+        @extend .u-text-orange;
+        width: 30%;
+        &--message {
+            width: 100%;
+            text-align: center;
+
+            + span {
+                width: 100%;
+            }
+        }
+    }
+    &__message {
+
+    }
+    &__input {
+
+    }
+}
