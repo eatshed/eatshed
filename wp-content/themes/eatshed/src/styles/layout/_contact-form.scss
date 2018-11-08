@@ -50,8 +50,10 @@
             }
         }
     }
-    &__message {
-
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
     }
     &__input {
 
