@@ -30,7 +30,7 @@ get_header();
 <section>
     <div class="container">
         <h2 class="has-text-centered">Got an event idea?</h2>
-        <h3 class="has-text-centered u-text-orange">Get intouch if you have an event that needs some plant pusher love </h3>
+        <h3 class="has-text-centered u-text-orange">Get in touch if you have an event that needs some plant pusher love </h3>
 
         <?php echo do_shortcode("[contact-form-7 id='174' title='Contact']"); ?>
     <div>

@@ -54,7 +54,7 @@ function origin_tinymce_formats($init) {
 
 add_filter('tiny_mce_before_init', 'origin_tinymce_formats' );
 
-
+// add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
 /**
  * Add styles to TinyMCE editor

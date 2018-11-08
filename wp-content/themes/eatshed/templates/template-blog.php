@@ -13,7 +13,6 @@
 
 <?php get_template_part('partials/image-carousel'); ?>
 
-
 <section class="blog-list">
     <div class="container">
         <div class="columns is-multiline">
