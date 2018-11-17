@@ -8,8 +8,11 @@
         background-repeat: no-repeat;
         background-color: transparent;
         background-size: 100% 100%;
-        padding: 2rem 3rem;
+        padding: 2rem 1rem;
+        text-align: center;
         @include from($tablet) {
+            text-align: left;
+            padding: 2rem 3rem;
             display: flex;          
         }
     }
