@@ -51,6 +51,13 @@ jQuery(function($) {
 		
 		inner.append(addressInput);
 		
+		$(addressInput).on("keydown", function(event) {
+			
+			if(event.keyCode == 13)
+				self.searchButton.trigger("click");
+			
+		});
+		
 		inner.append($(original).find("select.wpgmza_sl_radius_select"));
 		// inner.append($(original).find(".wpgmza_filter_select_" + map_id));
 		

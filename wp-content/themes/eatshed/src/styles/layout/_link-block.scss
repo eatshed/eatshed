@@ -22,3 +22,24 @@
         }
     }
 }
+.venue-link {
+    margin-bottom: 80px;
+    padding: 10px;
+    min-height: 35vw;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-grow: 0;
+        border: 10px solid $color-tertiary;
+        padding: 20px;
+        height: 100%;
+        p {
+            text-align: center;
+        }
+        p, h2 {
+            color: white;
+        }
+    }
+}

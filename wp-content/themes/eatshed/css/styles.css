@@ -3557,6 +3557,40 @@ table tbody tr:hover {
   .link-block__icon--hover {
     display: none; }
 
+.venue-link {
+  margin-bottom: 80px;
+  padding: 10px;
+  min-height: 35vw; }
+  .venue-link__inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    border: 10px solid #E9E084;
+    padding: 20px;
+    height: 100%; }
+    .venue-link__inner p {
+      text-align: center; }
+    .venue-link__inner p, .venue-link__inner h2 {
+      color: white; }
+
 .content-block__image {
   border: 10px solid #E9E084; }
 
@@ -3779,9 +3813,12 @@ table tbody tr:hover {
 
 .map {
   margin-bottom: 5rem; }
+  .map iframe {
+    height: 100%; }
   .map__map {
     border: 10px solid #E9E084;
-    padding: 0; }
+    padding: 0;
+    height: 500px; }
 
 .article__banner {
   border: 10px solid #E9E084; }

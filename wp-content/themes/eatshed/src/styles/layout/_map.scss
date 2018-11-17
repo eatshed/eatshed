@@ -1,10 +1,14 @@
 .map {
     margin-bottom: 5rem;
+    iframe {
+        height: 100%;
+    }
     &__title {
 
     }
-   &__map {
+    &__map {
         border: 10px solid $color-tertiary;
         padding: 0;
+        height: 500px;
     }
 }

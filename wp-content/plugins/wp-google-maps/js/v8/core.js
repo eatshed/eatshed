@@ -126,10 +126,10 @@ jQuery(function($) {
 			if(!m)
 				return null;
 			
-			return {
+			return new WPGMZA.LatLng({
 				lat: parseFloat(m[1]),
 				lng: parseFloat(m[3])
-			};
+			});
 		},
 		
 		/**

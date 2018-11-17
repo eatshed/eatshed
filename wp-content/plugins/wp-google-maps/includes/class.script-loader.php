@@ -230,9 +230,11 @@ class ScriptLoader
 						
 						<?php
 							echo "<pre>";
-							foreach($unresolvedDependencyHandles as $handle => $unused)
+							foreach($unresolvedDependencyHandles as $handle => $reference)
 							{
 								echo "$handle (in " . implode(', ', $this->dependenciesByHandle[$handle]) . ")\r\n";
+								echo "Requires:\r\n" . implode("\r\n", $reference);
+								echo "\r\n";
 							}
 							echo "</pre>";
 						?>
@@ -251,7 +253,7 @@ class ScriptLoader
 			
 			foreach($scripts as $handle => $script)
 			{
-				// echo "\r\nLooking at $handle\r\n";
+				 //echo "\r\nLooking at $handle\r\n";
 				
 				foreach($script->dependencies as $dependency)
 				{
@@ -276,7 +278,9 @@ class ScriptLoader
 						continue;
 					}
 					
-					$unresolvedDependencyHandles[$handle] = true;
+					if(empty($unresolvedDependencyHandles[$handle]))
+						$unresolvedDependencyHandles[$handle] = array();
+					$unresolvedDependencyHandles[$handle][$dependency] = $dependency;
 					
 					//echo "$dependency not yet included, skipping\r\n";
 					continue 2;
@@ -322,9 +326,11 @@ class ScriptLoader
 		
 		$combined = implode("\r\n", $combined);
 		
-		// TODO: Uncomment and test
-		//if(file_exists($dest) && md5(file_get_contents($dest)) == md5($combined))
-			//return;	// No changes, no need to build
+		if(file_exists($dest) && md5(file_get_contents($dest)) == md5($combined))
+			return;	// No changes, leave the file alone. Updating the file would cause the combined script to be newer than the minified script
+		
+		if(empty($combined))
+			throw new \Exception('Combined file would be blank.');
 		
 		file_put_contents($dest, $combined);
 	}

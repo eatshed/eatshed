@@ -128,10 +128,10 @@ jQuery(function($) {
 			if(!m)
 				return null;
 			
-			return {
+			return new WPGMZA.LatLng({
 				lat: parseFloat(m[1]),
 				lng: parseFloat(m[3])
-			};
+			});
 		},
 		
 		/**
@@ -3112,6 +3112,13 @@ jQuery(function($) {
 		
 		inner.append(addressInput);
 		
+		$(addressInput).on("keydown", function(event) {
+			
+			if(event.keyCode == 13)
+				self.searchButton.trigger("click");
+			
+		});
+		
 		inner.append($(original).find("select.wpgmza_sl_radius_select"));
 		// inner.append($(original).find(".wpgmza_filter_select_" + map_id));
 		
@@ -3554,7 +3561,7 @@ jQuery(function($) {
  */
 jQuery(function ($) {
 
-	if (!wp || !wp.i18n || !wp.blocks) return;
+	if (!window.wp || !wp.i18n || !wp.blocks) return;
 
 	var __ = wp.i18n.__;
 	var registerBlockType = wp.blocks.registerBlockType;
@@ -4815,6 +4822,27 @@ jQuery(function($) {
 			googleMap = MYMAP.map.googleMap;
 		
 		googleMap.controls[google.maps.ControlPosition.TOP_CENTER].push(this.element);
+		
+		// Address autocomplete
+		var options = {
+			types: ["geocode"]
+		};		
+		var restrict = wpgmaps_localize[map_id]["other_settings"]["wpgmza_store_locator_restrict"];
+		
+		this.addressInput = $(this.element).find(".addressInput")[0];
+		
+		if(this.addressInput)
+		{
+			if(restrict && restrict.length)
+				options.componentRestrictions = {
+					country: restrict
+				};
+			
+			this.autoComplete = new google.maps.places.Autocomplete(
+				this.addressInput,
+				options
+			);
+		}
 	}
 	
 	WPGMZA.GoogleModernStoreLocator.prototype = Object.create(WPGMZA.ModernStoreLocator.prototype);
@@ -5105,6 +5133,11 @@ jQuery(function($) {
 			this.settings.fillColor = "#ff0000";
 			this.settings.fillOpacity = 0.6;
 		}
+		
+		if(options.fillColor)
+			this.settings.fillColor = options.fillColor;
+		if(options.fillOpacity)
+			this.settings.fillOpacity = options.fillOpacity;
 		
 		this.olStyle = new ol.style.Style(this.getStyleFromSettings());
 		

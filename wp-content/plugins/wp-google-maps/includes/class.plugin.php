@@ -97,7 +97,7 @@ class Plugin
 			case "spatialFunctionPrefix":
 				$result = '';
 				
-				if(!empty($this->mysqlVersion) && preg_match('/^\d+/', $this->mysqlVersion, $majorVersion) && (int)$majorVersion[0] > 8)
+				if(!empty($this->mysqlVersion) && preg_match('/^\d+/', $this->mysqlVersion, $majorVersion) && (int)$majorVersion[0] >= 8)
 					$result = 'ST_';
 				
 				return $result;
