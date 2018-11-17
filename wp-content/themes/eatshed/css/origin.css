@@ -3379,30 +3379,55 @@ table tbody tr:hover {
   background: #ddd; }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   z-index: 10; }
+  @media screen and (min-width: 769px) {
+    .header {
+      position: -webkit-sticky;
+      position: sticky; } }
   .header__wrap {
     background: #00A886;
-    padding: 24px; }
+    padding: 8px; }
+    @media screen and (min-width: 769px) {
+      .header__wrap {
+        padding: 24px; } }
+  .header .logo {
+    display: none; }
+    @media screen and (min-width: 769px) {
+      .header .logo {
+        display: block;
+        width: 100%; } }
+    .header .logo--mobile {
+      display: block;
+      width: 60%; }
+      @media screen and (min-width: 769px) {
+        .header .logo--mobile {
+          display: none; } }
   .header--blog {
     background: white;
     border-bottom: 2px solid #4d4129;
     margin-bottom: 5rem;
     padding: 24px; }
-    .header--blog .logo {
-      width: 60px; }
     .header--blog .header__nav {
       margin-left: 2rem; }
   .header__social {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    display: none; }
     @media screen and (min-width: 769px) {
       .header__social {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
         margin-left: auto; } }
+    .header__social--mobile {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: auto; }
+      @media screen and (min-width: 769px) {
+        .header__social--mobile {
+          display: none; } }
   .header__social-links {
     width: 1.5rem;
     height: 1.5rem;
@@ -3449,11 +3474,15 @@ table tbody tr:hover {
   .header .menu-item {
     display: inline-block; }
     .header .menu-item a {
-      font-size: 20px;
+      font-size: 16px;
       text-transform: uppercase;
       color: white;
       font-weight: 400;
-      padding: 0 10px; }
+      padding: 0 4px; }
+      @media screen and (min-width: 769px) {
+        .header .menu-item a {
+          padding: 0 10px;
+          font-size: 20px; } }
   .header.header--blog .menu-item a {
     color: #4d4129; }
 
@@ -3462,6 +3491,14 @@ table tbody tr:hover {
 
 .footer {
   background-color: #144733; }
+  @media screen and (max-width: 768px) {
+    .footer__nav {
+      display: -webkit-inline-box !important;
+      display: -webkit-inline-flex !important;
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+      width: 49% !important;
+      vertical-align: top; } }
   .footer__social {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3475,8 +3512,14 @@ table tbody tr:hover {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
-    padding: 5rem 0; }
+            align-items: center; }
+  @media screen and (max-width: 768px) {
+    .footer__logo {
+      display: -webkit-inline-box !important;
+      display: -webkit-inline-flex !important;
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+      width: 49% !important; } }
   .footer .menu {
     padding: 0; }
   .footer .menu-header-container {
@@ -3656,7 +3699,7 @@ table tbody tr:hover {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 70vh;
+    height: 50vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -3665,12 +3708,19 @@ table tbody tr:hover {
     padding: 50px 0;
     -webkit-background-size: cover;
             background-size: cover; }
+    @media screen and (min-width: 769px) {
+      .carousel__background {
+        height: 70vh; } }
   .carousel__image {
     width: 35%;
     padding-bottom: 3rem; }
   .carousel__arrow {
-    width: 50px;
-    height: 50px; }
+    width: 30px;
+    height: 30px; }
+    @media screen and (min-width: 769px) {
+      .carousel__arrow {
+        width: 50px;
+        height: 50px; } }
 
 .owl-item {
   display: inline-block;
@@ -3682,8 +3732,11 @@ table tbody tr:hover {
 
 .owl-nav {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%; }
+  @media screen and (min-width: 769px) {
+    .owl-nav {
+      height: 50%; } }
   .owl-nav button {
     border: none;
     -webkit-box-shadow: none;
@@ -3833,6 +3886,9 @@ table tbody tr:hover {
   color: white;
   width: 60%; }
 
+.image-carousel__category {
+  color: white; }
+
 .image-carousel__item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3846,7 +3902,7 @@ table tbody tr:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
+  height: 50vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3855,35 +3911,45 @@ table tbody tr:hover {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
+  @media screen and (min-width: 769px) {
+    .image-carousel__item {
+      height: 70vh; } }
 
 .image-carousel__image {
   width: 35%;
   padding-bottom: 3rem; }
 
 .image-carousel__arrow {
-  width: 50px;
-  height: 50px; }
+  width: 30px;
+  height: 30px; }
+  @media screen and (min-width: 769px) {
+    .image-carousel__arrow {
+      width: 50px;
+      height: 50px; } }
 
 .image-carousel__title {
   color: white; }
 
-.owl-item {
-  display: inline-block; }
-
-.owl-nav {
+.image-carousel .owl-nav {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%; }
-  .owl-nav button {
+  @media screen and (min-width: 769px) {
+    .image-carousel .owl-nav {
+      height: 50%; } }
+  .image-carousel .owl-nav button {
     border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: transparent;
     position: absolute; }
-  .owl-nav .owl-next {
-    right: 5%; }
-  .owl-nav .owl-prev {
+  .image-carousel .owl-nav .owl-next {
+    right: 10%; }
+  .image-carousel .owl-nav .owl-prev {
     left: 5%; }
+
+.owl-item {
+  display: inline-block; }
 
 .wpcf7 p {
   display: -webkit-box;

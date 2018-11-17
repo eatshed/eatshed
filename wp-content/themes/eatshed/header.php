@@ -6,8 +6,16 @@
 	<div class="header__wrap">
 		<div class="container is-fluid">
 			<div class="columns">
-				<div class="column is-4">
-					<a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt="Shed Logo" /></a>
+				<div class="column is-4 is-flex">
+					<a href="<?php echo home_url(); ?>">
+						<img class="logo" src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt="Shed Logo" />
+						<img class="logo--mobile" src="<?php echo get_template_directory_uri() ?>/images/logo-large.svg" alt="Shed Logo" />
+					</a>
+					<div class="header__social--mobile">
+						<a href="<?php the_field('youtube', 'option'); ?>" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-youtube.svg" alt="Youtube" /></a>
+						<a href="<?php the_field('instagram', 'option'); ?>" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-insta.svg" alt="Instagram" /></a>
+						<a href="<?php the_field('facebook', 'option'); ?>" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.svg" alt="Facebook" /></a>
+					</div>
 				</div>
 				<div class="column is-8 is-flex header__column">
 					<div class="header__social">

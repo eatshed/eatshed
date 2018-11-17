@@ -1,7 +1,11 @@
 .footer {
 	background-color: $color-secondary;
 	&__nav {
-
+		@include until($tablet) {
+			display: inline-flex !important;
+			width: 49% !important;
+			vertical-align: top;
+		}
 	}
 	&__social {
 		display: flex;
@@ -13,7 +17,12 @@
 	}
 	&__container {
 		align-items: center;
-		padding: 5rem 0;
+	}
+	&__logo {
+		@include until($tablet) {
+			display: inline-flex !important;
+			width: 49% !important;
+		}
 	}
 
 	.menu {

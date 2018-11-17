@@ -5,18 +5,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        height: 50vh;
         flex-direction: column;
         padding: 50px 0;
         background-size: cover;
+        @include from($tablet) {
+			height: 70vh;
+		}
     }
     &__image {
         width: 35%;
         padding-bottom: 3rem;
     }
     &__arrow {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
+        @include from($tablet) {
+            width: 50px;
+            height: 50px;
+        }
     }
 }
 
@@ -34,8 +41,11 @@
   
 .owl-nav {
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
+    @include from($tablet) {
+        height: 50%;
+    }
     button {
         border: none;
         box-shadow: none;

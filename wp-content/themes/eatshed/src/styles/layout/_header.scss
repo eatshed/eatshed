@@ -3,30 +3,54 @@
 // =============================================================================
 
 .header {
-	position: sticky;
 	top: 0;
 	z-index: 10;
+	@include from($tablet) {
+		position: sticky;
+	}
 	&__wrap {
 		background: $color-primary;
-		padding: 24px;
+		padding: 8px;
+		@include from($tablet) {
+			padding: 24px;
+		}
+	}
+	.logo {
+		display: none;
+		@include from($tablet) {
+			display: block;
+			width: 100%;
+		}
+
+		&--mobile {
+			display: block;
+			width: 60%;
+			@include from($tablet) {
+				display: none;
+			}
+		}
 	}
 	&--blog {
 		background: white;
 		border-bottom: 2px solid $color-brown;
 		margin-bottom: 5rem;
 		padding: 24px;
-
-		.logo {
-			width: 60px;
-		}
 		.header__nav {
 			margin-left: 2rem;
 		}
 	}
 	&__social {
-		display: flex;
+		display: none;
 		@include from($tablet) {
+			display: flex;
 			margin-left: auto;
+		  }
+		  &--mobile {
+			display: flex;
+			margin-left: auto;
+			@include from($tablet) {
+				display: none;
+			}
 		  }
 	}
 	&__social-links {
@@ -67,11 +91,16 @@
 	.menu-item {
 		display: inline-block;
 		a {
-			font-size: 20px;
+			font-size: 16px;
 			text-transform: uppercase;
 			color: white;
 			font-weight: 400;
-			padding: 0 10px;
+			padding: 0 4px;
+
+			@include from($tablet) {
+				padding: 0 10px;
+				font-size: 20px;
+			}
 		}
 	}
 	&.header--blog {

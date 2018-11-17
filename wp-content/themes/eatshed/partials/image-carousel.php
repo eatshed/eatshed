@@ -19,14 +19,15 @@
         <div class="image-carousel__item" style="background-image: url(<?php echo $thumb_url ?>);">
             <div class="image-carousel__content">
                 <p class="image-carousel__category has-text-centered">
-                <span class="spotlight__category">
                     <?php foreach((get_the_category()) as $category)
                         { echo $category->cat_name . '  '; }
                     ?>
-                </span></p>
+                </p>
                 <h2 class="image-carousel__title has-text-centered"><?php the_title(); ?></h2>
                 <p class="image-carousel__author has-text-centered">By <?php the_author(); ?></p>
-                <a class="has-text-centered" href="<?php the_permalink(); ?>" rel="bookmark">Read article</a>
+                <p class="has-text-centered">
+                    <a class="has-text-centered" href="<?php the_permalink(); ?>" rel="bookmark">Read article</a>
+                </p>
             </div>
         </div>
 
