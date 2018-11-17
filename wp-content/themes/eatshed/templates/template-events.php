@@ -5,7 +5,7 @@ get_header();
 ?>
 <?php get_template_part( 'partials/banner'); ?>
 
-<div class="container">
+<div class="container spotlight-list">
     <h2>Upcoming Shed events</h2>
     <div class="columns is-multiline">
         <?php

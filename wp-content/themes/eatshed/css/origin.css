@@ -3245,12 +3245,16 @@ select {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
+  color: white;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: "nunito", Times, "Times New Roman", serif;
+  font-size: calc(16px + 0.3vw);
+  line-height: 1.5; }
 
 input[type="email"],
 input[type="number"],
@@ -3667,6 +3671,8 @@ table tbody tr:hover {
       color: #FAB500; }
     .spotlight:hover .spotlight__container {
       border-bottom: 2px solid #FAB500; }
+  .spotlight-list {
+    margin-bottom: 60px; }
   .spotlight__container {
     padding-bottom: 1rem;
     border-bottom: 2px solid #00A886;

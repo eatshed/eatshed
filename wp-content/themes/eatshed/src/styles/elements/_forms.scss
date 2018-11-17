@@ -14,10 +14,14 @@ select {
 	height: 38px;
 	padding: 6px 10px;
 	background-color: #fff;
+	color: white;
 	border: 1px solid #D1D1D1;
 	border-radius: 4px;
 	box-shadow: none;
 	box-sizing: border-box;
+	font-family: $font-family-body;
+	font-size: fluid-type($body-size);
+	line-height: $body-line-height;
 }
 
 input[type="email"],
