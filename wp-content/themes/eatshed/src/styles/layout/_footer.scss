@@ -1,5 +1,6 @@
 .footer {
 	background-color: $color-secondary;
+	padding: 5rem 0;
 	&__nav {
 		@include until($tablet) {
 			display: inline-flex !important;
@@ -17,6 +18,10 @@
 	}
 	&__container {
 		align-items: center;
+		display: flex;
+	}
+	.columns {
+		width: 100%;
 	}
 	&__logo {
 		@include until($tablet) {

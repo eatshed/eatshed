@@ -3490,7 +3490,8 @@ table tbody tr:hover {
   margin-bottom: 5rem; }
 
 .footer {
-  background-color: #144733; }
+  background-color: #144733;
+  padding: 5rem 0; }
   @media screen and (max-width: 768px) {
     .footer__nav {
       display: -webkit-inline-box !important;
@@ -3512,7 +3513,13 @@ table tbody tr:hover {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer .columns, .footer .wpcf7 {
+    width: 100%; }
   @media screen and (max-width: 768px) {
     .footer__logo {
       display: -webkit-inline-box !important;
