@@ -3758,6 +3758,15 @@ table tbody tr:hover {
     left: 5%; }
 
 .spotlight {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 2rem; }
   .spotlight:hover {
     text-decoration: none; }
@@ -3765,6 +3774,24 @@ table tbody tr:hover {
       color: #FAB500; }
     .spotlight:hover .spotlight__container {
       border-bottom: 2px solid #FAB500; }
+  .spotlight__text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .spotlight__text .btn, .spotlight__text input[type="submit"],
+    .spotlight__text input[type="reset"],
+    .spotlight__text input[type="button"] {
+      margin-top: auto; }
   .spotlight-list {
     margin-bottom: 60px; }
   .spotlight__container {
