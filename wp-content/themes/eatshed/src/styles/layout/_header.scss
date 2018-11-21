@@ -15,11 +15,26 @@
 			padding: 24px;
 		}
 	}
+	&__navWrap {
+		margin-left: auto;
+		@include until($tablet) {
+			margin-left: 0;
+			display: flex;
+			flex-direction: column;
+		}
+	}
 	.logo {
 		display: none;
 		@include from($tablet) {
 			display: block;
 			width: 100%;
+		}
+		&--blog {
+			display: block;
+			width: 50px;
+			@include from($tablet) {
+				width: 100%;
+			}
 		}
 
 		&--mobile {
@@ -36,7 +51,24 @@
 		margin-bottom: 5rem;
 		padding: 24px;
 		.header__nav {
-			margin-left: 2rem;
+			@include from($tablet) {
+				margin-left: 2rem;
+			}
+			&--blog {
+				@include until($tablet) {
+					display: none;
+				}
+				&--active {
+					display: block;
+				}
+			}
+		}
+		.menu {
+			@include until($tablet) {
+				display: flex;
+				flex-direction: column;
+				text-align: center;			
+			}
 		}
 	}
 	&__social {
@@ -71,6 +103,10 @@
 		color: lighten($color-brown, 30%);
 		font-weight: 400;
 		padding: 0 10px;
+		@include until($tablet) {
+			margin-left: 0;
+			text-align: center;
+		}
 	}
 
 	.menu {
@@ -108,6 +144,39 @@
 			a {
 				color: $color-brown;
 			}
+		}
+	}
+
+	&__burger {
+		position: relative;
+		display: block;
+		width: 20px;
+		height: 4px;
+		background: #222;
+		transition: all .2s ease-in-out;
+		
+		&:before, &:after {
+		  position: absolute;
+		  background: #222;
+		  content: '';
+		  width: 20px;
+		  height: 4px;
+		  transition: all .2s ease-in-out;
+		}
+		
+		&:before {
+		  top: -8px;
+		}
+		
+		&:after {
+		  top: 8px;
+		}
+	  }
+	&__burgerWrap {
+		display: flex;
+		align-items: center;
+		@include from($tablet) {
+			display: none;
 		}
 	}
 	

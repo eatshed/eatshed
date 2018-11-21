@@ -22,6 +22,11 @@ jQuery(function($){
 				dots:false
 			});
 		});
+		$('.header__burger').click(function(){
+			$(this).toggleClass('header__burger--active');
+			$('.header__nav--blog').toggleClass('header__nav--blog--active')
+			return false;
+		  });
 	});
 });
 
