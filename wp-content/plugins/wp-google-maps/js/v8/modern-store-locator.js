@@ -6,10 +6,11 @@
 jQuery(function($) {
 	
 	/**
-	 * The new modern look store locator. It takes the elements
-	 * from the default look and moves them into the map, wrapping
-	 * in a new element so we can apply new styles.
-	 * @return Object
+	 * The new modern look store locator. It takes the elements from the default look and moves them into the map, wrapping in a new element so we can apply new styles. <strong>Please <em>do not</em> call this constructor directly. Always use createInstance rather than instantiating this class directly.</strong> Using createInstance allows this class to be externally extensible.
+	 * @class WPGMZA.ModernStoreLocator
+	 * @constructor WPGMZA.ModernStoreLocator
+	 * @memberof WPGMZA
+	 * @param {int} map_id The ID of the map this store locator belongs to
 	 */
 	WPGMZA.ModernStoreLocator = function(map_id)
 	{
@@ -173,6 +174,13 @@ jQuery(function($) {
 		});
 	}
 	
+	/**
+	 * Creates an instance of a modern store locator, <strong>please <em>always</em> use this function rather than calling the constructor directly</strong>.
+	 * @method
+	 * @memberof WPGMZA.ModernStoreLocator
+	 * @param {int} map_id The ID of the map this store locator belongs to
+	 * @return {WPGMZA.ModernStoreLocator} An instance of WPGMZA.ModernStoreLocator
+	 */
 	WPGMZA.ModernStoreLocator.createInstance = function(map_id)
 	{
 		if(WPGMZA.settings.engine == "google-maps")

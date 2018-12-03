@@ -15,7 +15,7 @@
  */
 jQuery(function ($) {
 
-	if (!window.wp || !wp.i18n || !wp.blocks) return;
+	if (!window.wp || !wp.i18n || !wp.blocks || !wp.editor) return;
 
 	var __ = wp.i18n.__;
 	var registerBlockType = wp.blocks.registerBlockType;
@@ -29,7 +29,9 @@ jQuery(function ($) {
 	    Tooltip = _wp$components.Tooltip,
 	    PanelBody = _wp$components.PanelBody,
 	    TextareaControl = _wp$components.TextareaControl,
+	    CheckboxControl = _wp$components.CheckboxControl,
 	    TextControl = _wp$components.TextControl,
+	    SelectControl = _wp$components.SelectControl,
 	    RichText = _wp$components.RichText;
 
 
@@ -42,10 +44,69 @@ jQuery(function ($) {
 	};
 
 	WPGMZA.Integration.Gutenberg.prototype.getBlockInspectorControls = function (props) {
+
+		/*
+  <TextControl
+  				name="overrideWidthAmount"
+  				label={__("Override Width Amount")}
+  				checked={props.overrideWidthAmount}
+  				onChange={onPropertiesChanged}
+  				/>
+  			
+  			<SelectControl
+  				name="overrideWidthUnits"
+  				label={__("Override Width Units")}
+  				options={[
+  					{value: "px", label: "px"},
+  					{value: "%", label: "%"},
+  					{value: "vw`", label: "vw"},
+  					{value: "vh", label: "vh"}
+  				]}
+  				onChange={onPropertiesChanged}
+  				/>
+  				
+  			<CheckboxControl
+  				name="overrideHeight"
+  				label={__("Override Height")}
+  				checked={props.overrideWidth}
+  				onChange={onPropertiesChanged}
+  				/>
+  				
+  			<TextControl
+  				name="overrideHeightAmount"
+  				label={__("Override Height Amount")}
+  				checked={props.overrideWidthAmount}
+  				onChange={onPropertiesChanged}
+  				/>
+  			
+  			<SelectControl
+  				name="overrideHeightUnits"
+  				label={__("Override Height Units")}
+  				options={[
+  					{value: "px", label: "px"},
+  					{value: "%", label: "%"},
+  					{value: "vw`", label: "vw"},
+  					{value: "vh", label: "vh"}
+  				]}
+  				onChange={onPropertiesChanged}
+  				/>
+  				*/
+
+		var onOverrideWidthCheckboxChanged = function onOverrideWidthCheckboxChanged(value) {};
+
 		return React.createElement(
 			InspectorControls,
 			{ key: "inspector" },
-			React.createElement(PanelBody, { title: __('Map Settings') })
+			React.createElement(
+				PanelBody,
+				{ title: __('Map Settings') },
+				React.createElement(CheckboxControl, {
+					name: "overrideWidth",
+					label: __("Override Width"),
+					checked: props.overrideWidth,
+					onChange: onOverrideWidthCheckboxChanged
+				})
+			)
 		);
 	};
 

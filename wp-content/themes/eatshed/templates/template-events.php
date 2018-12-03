@@ -3,9 +3,16 @@
 the_post();
 get_header(); 
 ?>
-<?php get_template_part( 'partials/banner'); ?>
+<?php get_template_part( 'partials/banner-page'); ?>
+
 
 <div class="container spotlight-list">
+    <div class="columns is-multiline">
+        <div class="column is-8 is-offset-2 u-center">
+            <?php the_content(); ?>
+        </div>
+    </div>
+        
     <h2>Upcoming Shed events</h2>
     <div class="columns is-multiline">
         <?php

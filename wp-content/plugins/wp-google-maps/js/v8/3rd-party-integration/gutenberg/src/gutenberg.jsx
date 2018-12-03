@@ -12,8 +12,8 @@
  * Internal block libraries
  */
 jQuery(function($) {
-	
-	if(!window.wp || !wp.i18n || !wp.blocks)
+
+	if(!window.wp || !wp.i18n || !wp.blocks || !wp.editor)
 		return;
 	
 	const { __ } = wp.i18n;
@@ -32,7 +32,9 @@ jQuery(function($) {
 		Tooltip,
 		PanelBody,
 		TextareaControl,
+		CheckboxControl,
 		TextControl,
+		SelectControl,
 		RichText
 	} = wp.components;
 	
@@ -48,9 +50,71 @@ jQuery(function($) {
 	
 	WPGMZA.Integration.Gutenberg.prototype.getBlockInspectorControls = function(props)
 	{
+		
+		
+		/*
+		<TextControl
+						name="overrideWidthAmount"
+						label={__("Override Width Amount")}
+						checked={props.overrideWidthAmount}
+						onChange={onPropertiesChanged}
+						/>
+					
+					<SelectControl
+						name="overrideWidthUnits"
+						label={__("Override Width Units")}
+						options={[
+							{value: "px", label: "px"},
+							{value: "%", label: "%"},
+							{value: "vw`", label: "vw"},
+							{value: "vh", label: "vh"}
+						]}
+						onChange={onPropertiesChanged}
+						/>
+						
+					<CheckboxControl
+						name="overrideHeight"
+						label={__("Override Height")}
+						checked={props.overrideWidth}
+						onChange={onPropertiesChanged}
+						/>
+						
+					<TextControl
+						name="overrideHeightAmount"
+						label={__("Override Height Amount")}
+						checked={props.overrideWidthAmount}
+						onChange={onPropertiesChanged}
+						/>
+					
+					<SelectControl
+						name="overrideHeightUnits"
+						label={__("Override Height Units")}
+						options={[
+							{value: "px", label: "px"},
+							{value: "%", label: "%"},
+							{value: "vw`", label: "vw"},
+							{value: "vh", label: "vh"}
+						]}
+						onChange={onPropertiesChanged}
+						/>
+						*/
+		
+		const onOverrideWidthCheckboxChanged = value => {
+			
+			
+			
+		};
+		
 		return (
 			<InspectorControls key="inspector">
 				<PanelBody title={ __( 'Map Settings' ) } >
+					
+					<CheckboxControl
+						name="overrideWidth"
+						label={__("Override Width")}
+						checked={props.overrideWidth}
+						onChange={onOverrideWidthCheckboxChanged}
+						/>
 					
 				</PanelBody>
 			</InspectorControls>
@@ -88,6 +152,7 @@ jQuery(function($) {
 						<span class="wpgmza-gutenberg-block-title">
 							{ __("WP Google Maps") }
 						</span>
+						
 					</div>
 				];
 			},

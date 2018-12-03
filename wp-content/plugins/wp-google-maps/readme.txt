@@ -216,6 +216,25 @@ Please upgrade your version of WP Google Maps to version 6.0.27 as it includes m
 
 == Changelog ==
 
+= 7.10.48 :- 2018-12-03 :- Low priority =
+* Added a check for wp.editor in Gutenberg JS module 
+* Fixed InfoWindow not initialized before open called when using marker open by default setting
+* Fixed WPGMZA.OLMap returning zoom one level too far in (fixes map zooms in one level on save)
+
+= 7.10.47 :- 2018-11-22 :- Low priority =
+* Removed all redundant calls to getPlace
+* Places AutoCompletes now only request the "name" and "formatted_address" fields
+* Changed "Create an API key now" link
+ 
+= 7.10.46 :- 2018-11-20 :- Medium priority =
+* Fixed store locator circle and radius not displayed when no markers are present
+* Fixed browser compatibility code causing Gutenberg dependency failure
+* Google API version is now fixed at "Quarterly" (solves RetiredVersion notice)
+* Unified store locator circle and radius logic for both XML and DB marker pull
+* All PHP classes and methods now have documentation blocks
+* Server side documentation added in /docs/php
+* Client side documentation added in /docs/js
+
 = 7.10.45 :- 2018-11-12 :- Medium priority =
 * Fixed places autocomplete not initializing with modern store locator
 * Fixed conflict with Autoptimize with large amounts of data by bypassing CSS optimization where shortcode is present
