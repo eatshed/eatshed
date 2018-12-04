@@ -3671,7 +3671,7 @@ table tbody tr:hover {
     text-decoration: none; }
 
 .link-block {
-  margin: 2rem auto 3rem; }
+  margin: 5rem auto 5rem; }
   .link-block__list {
     padding: 0; }
   .link-block__link:hover .link-block__icon:first-of-type {
@@ -3791,7 +3791,7 @@ table tbody tr:hover {
             background-size: cover; }
     @media screen and (min-width: 769px) {
       .carousel__background {
-        height: 70vh; } }
+        height: 100%; } }
   .carousel__image {
     width: 35%;
     padding-bottom: 3rem; }
@@ -3802,6 +3802,10 @@ table tbody tr:hover {
       .carousel__arrow {
         width: 50px;
         height: 50px; } }
+  .carousel .owl-stage {
+    height: calc(100vh - 150px); }
+  .carousel .owl-item {
+    height: 100%; }
 
 .owl-item {
   display: inline-block;
@@ -3813,11 +3817,11 @@ table tbody tr:hover {
 
 .owl-nav {
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: 100%; }
   @media screen and (min-width: 769px) {
     .owl-nav {
-      height: 50%; } }
+      height: auto; } }
   .owl-nav button {
     border: none;
     -webkit-box-shadow: none;
@@ -3867,7 +3871,7 @@ table tbody tr:hover {
     .spotlight__text input[type="button"] {
       margin-top: auto; }
   .spotlight-list {
-    margin-bottom: 60px; }
+    margin-bottom: 6rem; }
   .spotlight__container {
     padding-bottom: 1rem;
     border-bottom: 2px solid #00A886;
@@ -3893,7 +3897,7 @@ table tbody tr:hover {
 
 .banner {
   padding: 5rem 0;
-  min-height: 50vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4068,7 +4072,11 @@ table tbody tr:hover {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .wpcf7 span {
   -webkit-box-flex: 1;

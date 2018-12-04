@@ -10,7 +10,7 @@
         padding: 50px 0;
         background-size: cover;
         @include from($tablet) {
-			height: 70vh;
+			height: 100%;
 		}
     }
     &__image {
@@ -25,6 +25,13 @@
             height: 50px;
         }
     }
+    .owl-stage {
+        height: calc(100vh - 150px);
+    }
+    .owl-item {
+        height: 100%;
+    }
+
 }
 
 
@@ -41,10 +48,10 @@
   
 .owl-nav {
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: 100%;
     @include from($tablet) {
-        height: 50%;
+        height: auto;
     }
     button {
         border: none;
