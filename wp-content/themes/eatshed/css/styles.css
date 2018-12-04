@@ -3892,7 +3892,6 @@ table tbody tr:hover {
     text-transform: uppercase; }
 
 .banner {
-  background-color: #00FF00;
   padding: 5rem 0;
   min-height: 50vh;
   display: -webkit-box;
@@ -3947,6 +3946,9 @@ table tbody tr:hover {
   .banner input[type="reset"],
   .banner input[type="button"] {
     margin-top: 2rem; }
+
+.dark h1, .dark .opening-times__servingTime, .dark p {
+  color: #144733; }
 
 .category h1, .category .opening-times__servingTime {
   font-size: 8rem;
