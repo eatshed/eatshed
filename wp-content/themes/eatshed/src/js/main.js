@@ -27,6 +27,11 @@ jQuery(function($){
 			$('.header__nav--blog').toggleClass('header__nav--blog--active')
 			return false;
 		  });
+
+		  $('.more-trigger').click(function(){
+			$('.more-menu').toggleClass('is-active');
+			return false;
+		  });
 	});
 });
 

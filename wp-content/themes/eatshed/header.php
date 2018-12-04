@@ -23,7 +23,35 @@
 						<a href="<?php the_field('instagram', 'option'); ?>" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-insta.svg" alt="Instagram" /></a>
 						<a href="<?php the_field('facebook', 'option'); ?>" class="header__social-links"><img src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.svg" alt="Facebook" /></a>
 					</div>
-					<nav class="nav"><?php wp_nav_menu( array('theme_location' => 'primary') ); ?></nav>
+					<nav class="nav"><?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
+					<div class="dropdown is-right more-menu">
+						<ul class="menu">
+							<li class="menu-item">
+								<a href="#na" class="more-trigger">More +</a>
+							</li>
+						</ul>
+						<div class="dropdown-menu" id="dropdown-menu3" role="menu">
+							<div class="dropdown-content">
+							<a href="#" class="dropdown-item">
+							GET EBOOK!
+							</a>
+							<a href="#" class="dropdown-item">
+								OUR STORY
+							</a>
+							<a href="#" class="dropdown-item">
+							GET IN TOUCH
+							</a>
+							<a href="#" class="dropdown-item">
+							CATERING
+							</a>
+							<a href="#" class="dropdown-item">
+							DELIVERY
+							</a>
+							</div>
+						</div>
+						</div>
+					</nav>
+
 				</div>
 			</div>
 		</div>
