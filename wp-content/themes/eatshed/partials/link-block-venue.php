@@ -14,8 +14,8 @@
         </li>
         <li class="link-block__item column is-one-third-mobile">
             <a href="<?php echo home_url(); ?>/contact" class="link-block__link">
-                <img class="link-block__icon" src="<?php echo get_template_directory_uri() ?>/images/link-blog.svg" alt="Read our blog" />
-                <img class="link-block__icon link-block__icon--hover" src="<?php echo get_template_directory_uri() ?>/images/link-blog-hover.svg" alt="Read our blog" />
+                <img class="link-block__icon" src="<?php echo get_template_directory_uri() ?>/images/link-contact.svg" alt="Contact Us" />
+                <img class="link-block__icon link-block__icon--hover" src="<?php echo get_template_directory_uri() ?>/images/link-contact-hover.svg" alt="Contact Us" />
             </a>
         </li>
     </ul>
