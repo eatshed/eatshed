@@ -1,5 +1,6 @@
 node_modules
 .DS_Store
+wp-config.php
 
 !wp-content/themes/eatshed/
 wp-content/themes/eatshed/node_modules/
