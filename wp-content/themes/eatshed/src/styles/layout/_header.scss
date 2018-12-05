@@ -12,7 +12,7 @@
 		background: $color-primary;
 		padding: 8px;
 		@include from($tablet) {
-			padding: 24px;
+			padding: 1rem;
 		}
 	}
 	&__navWrap {
@@ -119,6 +119,7 @@
 	.nav {
 		@include from($tablet) {
 			align-self: flex-end;
+			display: flex;
 			margin-left: auto;
 			margin-top: auto;
 		  }
