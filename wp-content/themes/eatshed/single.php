@@ -16,7 +16,11 @@
 	</div>
 	<div class="container u-spacing-bottom">
 		<div class="article__banner">
-			<img src="https://source.unsplash.com/random/1200x600"/>
+		<?php
+                if ( has_post_thumbnail() ) {
+                    the_post_thumbnail( '' );
+                }
+            ?>
 		</div>
 	</div>
 	<div class="container">		

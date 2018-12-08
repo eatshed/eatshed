@@ -3864,7 +3864,7 @@ body {
   color: #144733;
   font-family: "nunito", Times, "Times New Roman", serif;
   font-size: calc(16px + 0.3vw);
-  font-weight: 700;
+  font-weight: 100;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -4349,7 +4349,7 @@ table tbody tr:hover {
     background: white;
     border-bottom: 2px solid #4d4129;
     margin-bottom: 5rem;
-    padding: 24px; }
+    padding: 0.5rem 1rem; }
     @media screen and (min-width: 769px) {
       .header--blog .header__nav {
         margin-left: 2rem; } }
@@ -4412,7 +4412,8 @@ table tbody tr:hover {
             align-items: center; }
   .header__back {
     margin-left: auto;
-    font-size: 20px;
+    margin-top: 3px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #ac9463;
     font-weight: 400;
@@ -4852,11 +4853,19 @@ table tbody tr:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5rem;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
+  .banner:before {
+    display: none;
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
   .banner__container {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -4888,10 +4897,12 @@ table tbody tr:hover {
     margin: 0 auto;
     text-align: center;
     color: white; }
+  .banner--event {
+    background: #E9E084; }
   .banner .btn, .banner input[type="submit"],
   .banner input[type="reset"],
   .banner input[type="button"] {
-    margin-top: 2rem; }
+    margin-top: 3rem; }
 
 .dark h1, .dark .opening-times__servingTime, .dark p {
   color: #144733; }
@@ -4931,6 +4942,8 @@ table tbody tr:hover {
 
 .article__banner {
   border: 10px solid #E9E084; }
+  .article__banner img {
+    width: 100%; }
 
 .article__title {
   margin-top: 0; }

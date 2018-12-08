@@ -4,6 +4,9 @@
     }
     &__banner {
         border: 10px solid $color-tertiary;
+        img {
+            width: 100%;
+        }
     }
     &__title {
         margin-top: 0;

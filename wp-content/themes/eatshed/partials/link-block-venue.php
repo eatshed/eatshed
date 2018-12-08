@@ -7,9 +7,9 @@
             </a>
         </li>
         <li class="link-block__item column is-one-third-mobile">
-            <a href="<?php echo home_url(); ?>/events" class="link-block__link">
-                <img class="link-block__icon" src="<?php echo get_template_directory_uri() ?>/images/link-events.svg" alt="Find out about our events" />
-                <img class="link-block__icon link-block__icon--hover" src="<?php echo get_template_directory_uri() ?>/images/link-events-hover.svg" alt="Find out about our events" />
+            <a href="mailto:bookings@eatshed.com" class="link-block__link">
+                <img class="link-block__icon" src="<?php echo get_template_directory_uri() ?>/images/link-book.svg" alt="Find out about our events" />
+                <img class="link-block__icon link-block__icon--hover" src="<?php echo get_template_directory_uri() ?>/images/link-book-hover.svg" alt="Find out about our events" />
             </a>
         </li>
         <li class="link-block__item column is-one-third-mobile">
