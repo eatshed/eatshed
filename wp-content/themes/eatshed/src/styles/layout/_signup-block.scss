@@ -22,5 +22,17 @@
     }
     .btn {
         margin-left: auto;
+        padding: 0.5rem;
+        height: auto;
+        width: 80%;
+        @include from($tablet) {
+            padding: 1rem;
+            width: 20%;          
+        }
+    }
+    h3 {
+        @extend h2;
+        margin-top: 5px;
+        color: $color-quaternary;
     }
 }
