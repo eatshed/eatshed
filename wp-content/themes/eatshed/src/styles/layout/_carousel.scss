@@ -1,6 +1,7 @@
 
 .carousel {
     overflow: hidden;
+    position: relative;
     &__background {
         display: flex;
         justify-content: center;
@@ -52,10 +53,10 @@
   
 .owl-nav {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 30px);
     width: 100%;
     @include from($tablet) {
-        height: auto;
+        top: calc(50% - 50px);
     }
     button {
         border: none;
@@ -66,9 +67,15 @@
         outline: none;
     }
     .owl-next {
-        right: 5%;
+        right: 0;
+        @include from($tablet) {
+            right: 5%;
+        }
     }
     .owl-prev {
-        left: 5%;
+        left: 0;
+        @include from($tablet) {
+            left: 5%;
+        }
     }
 }

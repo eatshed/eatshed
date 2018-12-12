@@ -8,8 +8,19 @@
 			vertical-align: top;
 		}
 	}
+	&__copyright {
+		margin: 0;
+		text-align: center;
+		a:hover {
+			color: white;
+		}
+	}
+	&__copyright-container {
+		margin-top: 2rem;
+	}
 	&__social {
 		display: flex;
+		align-items: center;
 	}
 	&__social-links {
 		width: 3rem;
@@ -27,6 +38,12 @@
 		@include until($tablet) {
 			display: inline-flex !important;
 			width: 49% !important;
+		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 70%;
 		}
 	}
 
@@ -51,6 +68,7 @@
 			text-transform: uppercase;
 			color: white;
 			font-weight: 400;
+			font-size: 1rem;
 		}
 	}
 	nav.header-blog {

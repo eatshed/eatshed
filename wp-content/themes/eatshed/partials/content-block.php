@@ -1,9 +1,9 @@
 <div class="content-block container">
     <div class="columns">
-        <div class="column is-half">
+        <div class="column is-5 is-offset-1">
             <img class="content-block__image" src="<?php the_field('content_image') ?>" alt="" />
         </div>
-        <div class="column is-5 is-offset-1">
+        <div class="column is-5">
             <h2 class="content-block__title"><?php the_field('content_title');?>
             <span class="content-block__sub"><?php the_field('content_subtitle');?></span></h2>
             <?php the_field('content_para');?>

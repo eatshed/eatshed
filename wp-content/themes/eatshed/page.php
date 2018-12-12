@@ -3,7 +3,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'partials/banner-page'); ?>
 
-<section class="article">
+<section class="article u-spacing-top">
 	<div class="container">		
 		<div class="columns is-multiline">
             <div class="column is-8 is-offset-2">
