@@ -39,11 +39,8 @@
     }
     .owl-nav {
         position: absolute;
-        top: 40%;
         width: 100%;
-        @include from($tablet) {
-            height: 50%;
-        }
+        top: calc(50% - 50px);
         button {
             border: none;
             box-shadow: none;

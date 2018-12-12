@@ -42,6 +42,9 @@
 .u-spacing-bottom {
   margin-bottom: 5rem !important; }
 
+.u-spacing-top {
+  margin-top: 5rem !important; }
+
 .u-flex-center {
   display: -webkit-box !important;
   display: -webkit-flex !important;
@@ -5001,11 +5004,8 @@ table tbody tr:hover {
 
 .image-carousel .owl-nav {
   position: absolute;
-  top: 40%;
-  width: 100%; }
-  @media screen and (min-width: 769px) {
-    .image-carousel .owl-nav {
-      height: 50%; } }
+  width: 100%;
+  top: calc(50% - 50px); }
   .image-carousel .owl-nav button {
     border: none;
     -webkit-box-shadow: none;

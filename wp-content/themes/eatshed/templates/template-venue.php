@@ -4,9 +4,11 @@ the_post();
 get_header(); 
 ?>
 <?php get_template_part( 'partials/banner-page'); ?>
-<div class="columns is-multiline">
-    <div class="column is-8 is-offset-2 u-center">
-        <?php the_content(); ?>
+<div class="container container-fluid u-spacing-top">
+    <div class="columns is-multiline">
+        <div class="column is-8 is-offset-2 u-center">
+            <?php the_content(); ?>
+        </div>
     </div>
 </div>
 <?php get_template_part('partials/link-block-venue'); ?>
