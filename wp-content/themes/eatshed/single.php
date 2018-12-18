@@ -16,7 +16,7 @@
 	</div>
 	<div class="container u-spacing-bottom">
 		<div class="article__banner">
-		<?php
+			<?php
                 if ( has_post_thumbnail() ) {
                     the_post_thumbnail( '' );
                 }
