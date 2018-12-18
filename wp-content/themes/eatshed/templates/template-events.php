@@ -39,7 +39,7 @@ get_header();
         <h2 class="has-text-centered">Got an event idea?</h2>
         <h3 class="has-text-centered u-text-orange">Get in touch if you have an event that needs some plant pusher love </h3>
 
-        <?php echo do_shortcode("[contact-form-7 id='174' title='Contact']"); ?>
+        <?php echo do_shortcode("[contact-form-7 id='342' title='Events']"); ?>
     <div>
 </section>
 
