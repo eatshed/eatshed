@@ -1,7 +1,7 @@
 <?php
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 $args = array (
-    'showposts' => 10,
+    'showposts' => 18,
     'paged' => $paged
 );
 query_posts( $args );
@@ -29,10 +29,10 @@ query_posts( $args );
             </div>
         </div>
     </a>
-    <?php the_posts_pagination( array(
-        'mid_size'  => 2,
-        'prev_text' => __( 'Prev', '' ),
-        'next_text' => __( 'Next', '' ),
-    ) ); ?>
-<?php endwhile; ?>
     
+<?php endwhile; ?>
+<?php the_posts_pagination( array(
+    'mid_size'  => 2,
+    'prev_text' => __( 'Prev', '' ),
+    'next_text' => __( 'Next', '' ),
+) ); ?>
