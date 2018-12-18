@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class="columns">
-            <nav class="footer__nav column is-offset-2 is-2 is-half-mobile">
+            <nav class="footer__nav column is-offset-1 is-3 is-half-mobile">
                 <?php wp_nav_menu( array('theme_location' => 'footer') ); ?>
             </nav>
             <div class="footer__logo column is-4 is-half-mobile">
