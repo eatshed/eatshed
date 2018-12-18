@@ -15,6 +15,7 @@
 
 <section class="blog-list u-spacing-bottom">
     <div class="container">
+        <h2>Latest posts</h2>
         <div class="columns is-multiline">
             <?php get_template_part( 'partials/loop', 'post' ); ?>
         </div>
