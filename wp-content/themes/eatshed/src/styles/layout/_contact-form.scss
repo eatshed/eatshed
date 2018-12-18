@@ -1,4 +1,4 @@
-.wpcf7 {
+.wpcf7, .mc-field-group  {
     @extend .columns;
     @extend .is-centered;
     &-form {
@@ -37,6 +37,18 @@
     }
 }
 
+.mc-field-group {
+    display: flex;
+    margin: 2rem 0 !important;
+    label {
+        @extend h4;
+        @extend .u-text-orange;
+        width: 30%;
+    }
+}
+input[type="submit"], input[type="reset"], input[type="button"] {
+    margin-left: 23%;
+}
 .form {
     &__label {
         @extend h4;
