@@ -4529,7 +4529,7 @@ table tbody tr:hover {
 
 .footer {
   background-color: #144733;
-  padding: 5rem 0; }
+  padding: 3rem 0; }
   @media screen and (max-width: 768px) {
     .footer__nav {
       display: -webkit-inline-box !important;
@@ -4545,6 +4545,8 @@ table tbody tr:hover {
       color: white; }
   .footer__copyright-container {
     margin-top: 2rem; }
+    .footer__copyright-container p {
+      font-size: 1rem; }
   .footer__social {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4614,6 +4616,10 @@ table tbody tr:hover {
       font-size: 1rem; }
   .footer nav.header-blog a {
     color: black; }
+
+#menu-footer {
+  -webkit-columns: 100px 2;
+          columns: 100px 2; }
 
 .page-template-template-blog .footer, .category .footer, .single-post .footer {
   background: #4D4129; }
@@ -5024,7 +5030,8 @@ table tbody tr:hover {
 
 .image-carousel__content {
   color: white;
-  width: 60%; }
+  width: 60%;
+  z-index: 1; }
 
 .image-carousel__category {
   color: white; }
@@ -5050,7 +5057,18 @@ table tbody tr:hover {
           flex-direction: column;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  position: relative; }
+  .image-carousel__item:before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    z-index: 0; }
   @media screen and (min-width: 769px) {
     .image-carousel__item {
       height: 70vh; } }
