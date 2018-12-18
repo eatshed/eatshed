@@ -4057,6 +4057,10 @@ dt {
 dd {
   margin-left: 0; }
 
+.blog-list h2, .blog-list .signup-block h3, .signup-block .blog-list h3 {
+  margin-top: 1.4em;
+  margin-bottom: .4em; }
+
 .content a {
   text-decoration: none; }
 
