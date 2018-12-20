@@ -6,6 +6,3 @@ wp-config.php
 wp-content/themes/eatshed/node_modules/
 wp-content/themes/eatshed/.sass-cache/
 wp-content/themes/eatshed/.DS_Store
-
-wp-content/plugins/
-wp-content/uploads/
