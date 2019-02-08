@@ -1,6 +1,7 @@
 <?php
-    get_template_part( 'partials/header-blog' );
-    the_post();
+// Template Name: Blog
+get_template_part( 'partials/header-blog' );
+the_post();
 ?>
 
 <div class="container blog-logo">
