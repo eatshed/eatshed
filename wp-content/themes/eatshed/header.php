@@ -8,7 +8,7 @@
 			<div class="columns">
 				<div class="column is-4 is-flex">
 					<a href="<?php echo home_url(); ?>">
-						<img class="logo" src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="Shed Logo" />
+						<img class="logo" src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt="Shed Logo" />
 						<img class="logo--mobile" src="<?php echo get_template_directory_uri() ?>/images/logo-large.svg" alt="Shed Logo" />
 					</a>
 					<div class="header__social--mobile">
