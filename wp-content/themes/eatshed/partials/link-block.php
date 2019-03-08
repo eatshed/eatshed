@@ -19,7 +19,7 @@
             </a>
         </li>
         <li class="link-block__item column is-half-mobile">
-            <a href="<?php echo home_url(); ?>/blog" class="link-block__link">
+            <a href="<?php echo home_url(); ?>/nicely-nourished-plant-based-blog" class="link-block__link">
                 <img class="link-block__icon" src="<?php echo get_template_directory_uri() ?>/images/link-blog.svg" alt="Read our blog" />
                 <img class="link-block__icon link-block__icon--hover" src="<?php echo get_template_directory_uri() ?>/images/link-blog-hover.svg" alt="Read our blog" />
             </a>
