@@ -7,7 +7,7 @@
 	<div class="container is-fluid">
 		<div class="columns is-mobile is-multiline">
 			<div class="column is-half-mobile is-2-tablet is-1-desktop is-flex">
-				<a class="logo--blog" href="<?php echo home_url(); ?>/blog"><img src="<?php echo get_template_directory_uri() ?>/images/nn-logo.svg" alt="NN Logo" /></a>
+				<a class="logo--blog" href="<?php echo home_url(); ?>/nicely-nourished-plant-based-blog/"><img src="<?php echo get_template_directory_uri() ?>/images/nn-logo.svg" alt="NN Logo" /></a>
 			</div>
 			<div class="column header__burgerWrap is-offset-4-mobile is-2-mobile">
 				<a class="header__burger" href="#"><span></span></a>

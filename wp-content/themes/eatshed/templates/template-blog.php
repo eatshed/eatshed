@@ -7,7 +7,7 @@ the_post();
 <div class="container blog-logo">
 	<div class="columns is-mobile">
 		<div class="column is-half is-offset-one-quarter">
-			<a class="logo" href="<?php echo home_url(); ?>/blog"><img src="<?php echo get_template_directory_uri() ?>/images/logo-blog.svg" alt="Shed Logo" /></a>
+			<a class="logo" href="<?php echo home_url(); ?>/nicely-nourished-plant-based-blog/"><img src="<?php echo get_template_directory_uri() ?>/images/logo-blog.svg" alt="Shed Logo" /></a>
 		</div>
 	</div>
 </div>
